@@ -1,1 +1,176 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Get Your Small Business Found on Google — Wordwise</title>
+<meta name="description" content="Most small business websites are invisible on Google. Here's exactly why — and the straightforward way to fix it without spending money on paid advertising.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --orange: #E8602A; --orange-light: #FFF0EA; --black: #141414;
+    --grey-dark: #444; --grey-mid: #888; --grey-light: #F5F4F2;
+    --white: #FDFCFB; --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--black); line-height: 1.6; }
 
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(253,252,251,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .nav-logo { font-family: var(--serif); font-size: 22px; color: var(--black); text-decoration: none; }
+  .nav-logo span { color: var(--orange); }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--grey-dark); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--orange); }
+  .nav-cta { background: var(--orange) !important; color: white !important; padding: 10px 22px; border-radius: 6px; font-weight: 600 !important; }
+
+  /* ARTICLE LAYOUT */
+  .article-wrap { max-width: 680px; margin: 0 auto; padding: 140px 24px 100px; }
+
+  .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--grey-mid); text-decoration: none; margin-bottom: 40px; transition: color 0.2s; }
+  .back-link:hover { color: var(--orange); }
+
+  .article-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
+  .article-title { font-family: var(--serif); font-size: clamp(32px, 5vw, 48px); line-height: 1.1; letter-spacing: -1px; color: var(--black); margin-bottom: 20px; }
+  .article-meta { font-size: 14px; color: var(--grey-mid); margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid rgba(0,0,0,0.07); }
+  .article-meta span { margin: 0 8px; }
+
+  /* ARTICLE BODY */
+  .article-body { font-size: 17px; font-weight: 300; color: var(--grey-dark); line-height: 1.8; }
+  .article-body p { margin-bottom: 24px; }
+  .article-body h2 { font-family: var(--serif); font-size: 26px; color: var(--black); margin: 48px 0 16px; line-height: 1.2; }
+  .article-body h3 { font-size: 18px; font-weight: 700; color: var(--black); margin: 32px 0 12px; }
+  .article-body ul, .article-body ol { margin: 0 0 24px 24px; }
+  .article-body li { margin-bottom: 10px; line-height: 1.7; }
+  .article-body strong { font-weight: 600; color: var(--black); }
+  .article-body a { color: var(--orange); text-decoration: underline; text-decoration-thickness: 1px; }
+  .article-body blockquote { border-left: 3px solid var(--orange); margin: 32px 0; padding: 16px 24px; background: var(--orange-light); border-radius: 0 8px 8px 0; font-style: italic; color: var(--black); }
+
+  .callout { background: var(--grey-light); border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
+  .callout-title { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+  .callout p { font-size: 16px; color: var(--grey-dark); margin: 0; line-height: 1.65; }
+
+  /* CTA */
+  .article-cta { background: var(--black); border-radius: 16px; padding: 40px; margin-top: 64px; text-align: center; }
+  .article-cta h3 { font-family: var(--serif); font-size: 26px; color: white; margin-bottom: 12px; }
+  .article-cta p { font-size: 15px; color: rgba(255,255,255,0.55); margin-bottom: 24px; font-weight: 300; }
+  .article-cta a { display: inline-block; background: var(--orange); color: white; padding: 14px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; }
+
+  footer { background: #0D0D0D; padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.25); }
+  footer .footer-logo { font-family: var(--serif); font-size: 16px; color: rgba(255,255,255,0.4); }
+  footer .footer-logo span { color: var(--orange); }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 20px; }
+    .nav-links { gap: 16px; }
+    .article-wrap { padding: 120px 20px 80px; }
+    footer { padding: 20px; flex-direction: column; gap: 8px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-logo">Word<span>wise</span></a>
+  <div class="nav-links">
+    <a href="/index.html#services">Services</a>
+    <a href="/index.html#pricing">Pricing</a>
+    <a href="/blog.html" class="active">Blog</a>
+    <a href="/index.html#contact" class="nav-cta">Get a free sample</a>
+  </div>
+</nav>
+
+<div class="article-wrap">
+
+  <a href="/blog.html" class="back-link">← Back to blog</a>
+
+  <div class="article-tag">SEO Tips</div>
+  <h1 class="article-title">How to Get Your Small Business Found on Google (Without Paying for Ads)</h1>
+  <div class="article-meta">
+    By Ben Adamson <span>·</span> 11 May 2026 <span>·</span> 5 min read
+  </div>
+
+  <div class="article-body">
+
+    <p>If you run a small business and you're not showing up on Google, you're losing customers every single day to competitors who are — even if your product or service is better than theirs.</p>
+
+    <p>The frustrating part? Most small business owners don't realise how invisible they are. They built their website, put it online, and assumed Google would find it. The reality is that Google needs more than a website to rank you. It needs signals — and the most important signal is content.</p>
+
+    <h2>Why Your Website Isn't Showing Up</h2>
+
+    <p>Google ranks pages, not websites. That means every page on your site is competing independently for its own search terms. Your homepage might rank for your business name — but it's very unlikely to rank for anything else unless it's been specifically written to do so.</p>
+
+    <p>Most small business websites have four or five pages: Home, About, Services, Contact, and maybe a Gallery. None of them are written with specific keywords in mind. None of them answer the questions your potential customers are typing into Google. So Google doesn't show them.</p>
+
+    <div class="callout">
+      <div class="callout-title">The core problem</div>
+      <p>Your potential customers are searching for things like "best plumber in Guildford" or "family photographer Surrey" right now. If you haven't written content that targets those exact phrases, you won't appear — no matter how good your business is.</p>
+    </div>
+
+    <h2>What Actually Works: Blog Content</h2>
+
+    <p>The most reliable way to rank on Google as a small business — without paying for ads — is to publish regular, well-written blog articles that target the specific keywords your customers are searching for.</p>
+
+    <p>This is called SEO content, and it works because Google's job is to match search queries with the most useful, relevant answers. If you publish an article that genuinely answers a question your customers are asking, Google will eventually show it to them.</p>
+
+    <p>The key word is <strong>eventually</strong>. SEO takes time — typically 3 to 6 months to see meaningful results. But unlike paid ads, the traffic it generates doesn't stop the moment you stop paying. A well-written article can bring in customers for years.</p>
+
+    <h2>The Three Things Every Article Needs</h2>
+
+    <p>Not all blog posts are equal. Plenty of small businesses publish content that never ranks for anything because it's missing the basics. Here's what every SEO article needs:</p>
+
+    <h3>1. A specific target keyword</h3>
+    <p>Before writing a single word, decide exactly what search term you want the article to rank for. Be specific — "photographer" is too broad. "Newborn photographer Surrey" is a specific phrase with real search intent behind it. Every article should target one primary keyword.</p>
+
+    <h3>2. That keyword in the right places</h3>
+    <p>The keyword needs to appear in your article's title (the H1), in the first paragraph, in at least one subheading, and naturally throughout the body. It also needs to be in your meta title and meta description — the text that appears in Google search results.</p>
+
+    <h3>3. Genuine usefulness</h3>
+    <p>Google's algorithm has become very good at identifying thin, low-quality content. Articles that exist purely to rank — stuffed with keywords but offering nothing useful — get penalised. Write something your customer would genuinely want to read, and the SEO takes care of itself.</p>
+
+    <h2>How Often Should You Publish?</h2>
+
+    <p>Consistency matters more than frequency. Two well-written articles per month will outperform eight rushed ones. Google rewards sites that publish regularly over time — it signals that the site is active and trustworthy.</p>
+
+    <p>For most small businesses, a realistic target is one to two articles per month. At that rate, you'll have 12 to 24 indexed articles within a year — each one a potential entry point for a new customer.</p>
+
+    <blockquote>One article targeting the right keyword can bring in more new customers in a month than a year of posting on social media.</blockquote>
+
+    <h2>What to Write About</h2>
+
+    <p>The easiest way to find article topics is to think about the questions your customers ask you before they buy. If you're a roofer, people ask "how much does a new roof cost?" If you're a café, people search "dog friendly cafes near me." If you're a framer, people search "how to frame a sports shirt."</p>
+
+    <p>Each of those questions is an article topic. Each article is a potential page-one Google ranking. Each ranking is a stream of customers finding your business for free.</p>
+
+    <div class="callout">
+      <div class="callout-title">Quick wins to implement this week</div>
+      <p>1. Google your main service + your town and see who appears. That's your competition.<br><br>2. Type your service into Google and look at the "People also ask" section. Every question is a potential article topic.<br><br>3. Check if your website has a blog section. If not — that's the first thing to add.</p>
+    </div>
+
+    <h2>The Honest Reality</h2>
+
+    <p>SEO content works — but it takes time, consistency, and genuine effort. Writing a good 1,000-word article that targets the right keyword takes a few hours if you know what you're doing. Most business owners don't have that time, which is why SEO copywriters exist.</p>
+
+    <p>Whether you write it yourself or work with someone, the principle is the same: publish useful, keyword-targeted content regularly, and Google will start sending you customers.</p>
+
+    <p>That's the whole strategy. Everything else is details.</p>
+
+  </div>
+
+  <div class="article-cta">
+    <h3>Want someone to do this for you?</h3>
+    <p>I write SEO blog articles for small UK businesses — keyword research, writing, and meta information included. Free sample article for new clients.</p>
+    <a href="/index.html#contact">Get a free sample article →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Word<span>wise</span></div>
+  <p>© 2026 Wordwise · Freelance SEO Copywriter · UK-based, working nationwide</p>
+</footer>
+
+</body>
+</html>
