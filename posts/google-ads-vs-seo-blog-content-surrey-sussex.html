@@ -1,0 +1,253 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads vs SEO Blog Content | Which Wins for Surrey Businesses? — Wordwise</title>
+<meta name="description" content="Google Ads cost Surrey businesses £300–600/month — and stop the moment you stop paying. Here's why 5 SEO blog articles do more for less, and keep working for years.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --orange: #E8602A; --orange-light: #FFF0EA; --black: #141414;
+    --grey-dark: #444; --grey-mid: #888; --grey-light: #F5F4F2;
+    --white: #FDFCFB; --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--black); line-height: 1.6; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(253,252,251,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .nav-logo { font-family: var(--serif); font-size: 22px; color: var(--black); text-decoration: none; }
+  .nav-logo span { color: var(--orange); }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--grey-dark); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--orange); }
+  .nav-cta { background: var(--orange) !important; color: white !important; padding: 10px 22px; border-radius: 6px; font-weight: 600 !important; }
+
+  .article-wrap { max-width: 680px; margin: 0 auto; padding: 140px 24px 100px; }
+
+  .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--grey-mid); text-decoration: none; margin-bottom: 40px; transition: color 0.2s; }
+  .back-link:hover { color: var(--orange); }
+
+  .article-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
+  .article-title { font-family: var(--serif); font-size: clamp(28px, 5vw, 44px); line-height: 1.1; letter-spacing: -1px; color: var(--black); margin-bottom: 20px; }
+  .article-meta { font-size: 14px; color: var(--grey-mid); margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid rgba(0,0,0,0.07); }
+  .article-meta span { margin: 0 8px; }
+
+  .article-body { font-size: 17px; font-weight: 300; color: var(--grey-dark); line-height: 1.8; }
+  .article-body p { margin-bottom: 24px; }
+  .article-body h2 { font-family: var(--serif); font-size: 26px; color: var(--black); margin: 48px 0 16px; line-height: 1.2; }
+  .article-body ul { margin: 0 0 24px 24px; }
+  .article-body li { margin-bottom: 10px; line-height: 1.7; }
+  .article-body strong { font-weight: 600; color: var(--black); }
+
+  /* CALLOUT BOX */
+  .callout { background: var(--grey-light); border-radius: 12px; padding: 24px 28px; margin: 32px 0; border-left: 4px solid var(--orange); }
+  .callout-title { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+  .callout p { font-size: 16px; color: var(--grey-dark); margin: 0; line-height: 1.65; }
+  .callout p + p { margin-top: 8px; }
+
+  /* TABLES */
+  .table-wrap { overflow-x: auto; margin: 32px 0; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  thead tr { background: var(--black); color: white; }
+  thead th { padding: 12px 16px; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+  thead th:nth-child(3) { background: var(--orange); }
+  tbody tr:nth-child(even) { background: var(--grey-light); }
+  tbody tr:nth-child(odd) { background: white; }
+  tbody td { padding: 11px 16px; color: var(--grey-dark); border-bottom: 1px solid rgba(0,0,0,0.05); }
+  tbody td:first-child { font-weight: 500; color: var(--black); }
+  tbody td:last-child { font-weight: 600; color: var(--orange); }
+
+  /* CPC TABLE — last col is price not special colour */
+  .cpc-table thead th:nth-child(3) { background: var(--black); }
+  .cpc-table tbody td:last-child { color: #DC2626; }
+  .cpc-table tbody td:nth-child(2) { color: #DC2626; font-weight: 600; }
+
+  /* COMPARISON TABLE — override last col */
+  .comparison-table thead th:nth-child(3) { background: var(--orange); color: white; }
+  .comparison-table tbody td:last-child { color: #16A34A; font-weight: 600; }
+  .comparison-table tbody td:nth-child(2) { color: #DC2626; }
+  .comparison-table tbody td:first-child { color: var(--grey-mid); font-weight: 400; font-size: 14px; }
+
+  /* CTA */
+  .article-cta { background: var(--black); border-radius: 16px; padding: 40px; margin-top: 64px; text-align: center; }
+  .article-cta h3 { font-family: var(--serif); font-size: 26px; color: white; margin-bottom: 12px; }
+  .article-cta p { font-size: 15px; color: rgba(255,255,255,0.55); margin-bottom: 24px; font-weight: 300; line-height: 1.65; }
+  .article-cta a { display: inline-block; background: var(--orange); color: white; padding: 14px 32px; border-radius: 8px; font-size: 15px; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+  .article-cta a:hover { background: #c94f1f; }
+
+  footer { background: #0D0D0D; padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.25); }
+  footer .footer-logo { font-family: var(--serif); font-size: 16px; color: rgba(255,255,255,0.4); }
+  footer .footer-logo span { color: var(--orange); }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 20px; }
+    .nav-links { gap: 16px; }
+    .article-wrap { padding: 120px 20px 80px; }
+    footer { padding: 20px; flex-direction: column; gap: 8px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-logo">Word<span>wise</span></a>
+  <div class="nav-links">
+    <a href="/index.html#services">Services</a>
+    <a href="/index.html#pricing">Pricing</a>
+    <a href="/blog.html" class="active">Blog</a>
+    <a href="/index.html#contact" class="nav-cta">Get a free sample</a>
+  </div>
+</nav>
+
+<div class="article-wrap">
+
+  <a href="/blog.html" class="back-link">← Back to blog</a>
+
+  <div class="article-tag">SEO vs Paid Ads</div>
+  <h1 class="article-title">Google Ads vs SEO Blog Content: Which Is Better Value for Surrey and Sussex Businesses?</h1>
+  <div class="article-meta">
+    By Ben Adamson <span>·</span> 13 May 2026 <span>·</span> 6 min read
+  </div>
+
+  <div class="article-body">
+
+    <p>If you run a small business in Surrey or Sussex, chances are you've either tried Google Ads or been told you should. The pitch is compelling: pay to appear at the top of Google search results, get in front of people who are already looking for what you do, and watch the enquiries roll in.</p>
+
+    <p>The reality for most small businesses is rather different. Google Ads can work — but it comes at a cost that most local businesses don't fully account for until they've been running campaigns for a few months. And there's a fundamental problem with the model that no amount of campaign optimisation can fix.</p>
+
+    <p>In this article we're going to compare the actual cost of Google Ads against the alternative: a small number of well-written, SEO-optimised blog articles. The numbers might surprise you.</p>
+
+    <h2>The Problem With Google Ads for Small Businesses</h2>
+
+    <p>Google Ads operates on a cost-per-click (CPC) model. Every time someone clicks your advert, you pay. The amount you pay per click is determined by competition — the more businesses bidding on the same keywords, the higher the cost.</p>
+
+    <p>For service-based businesses in Surrey and Sussex, those costs have risen significantly over the past few years. Here are typical CPCs for common local searches:</p>
+
+    <div class="table-wrap">
+      <table class="cpc-table">
+        <thead>
+          <tr>
+            <th>Search term</th>
+            <th>Avg. cost per click</th>
+            <th>Monthly cost for 100 clicks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Plumber Surrey</td><td>£2.50–4.00</td><td>£250–400/month</td></tr>
+          <tr><td>Accountant Dorking</td><td>£3.00–6.00</td><td>£300–600/month</td></tr>
+          <tr><td>Photographer Sussex</td><td>£1.50–3.00</td><td>£150–300/month</td></tr>
+          <tr><td>Solicitor Surrey</td><td>£5.00–12.00</td><td>£500–1,200/month</td></tr>
+          <tr><td>Roofer Sussex</td><td>£2.00–5.00</td><td>£200–500/month</td></tr>
+          <tr><td>Dentist Surrey</td><td>£3.00–8.00</td><td>£300–800/month</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>That means a plumbing company in Surrey paying for Google Ads might spend £300–400 per month just to get 100 people to click their website. At a typical conversion rate of 3–5%, that's 3–5 enquiries — at a cost of £60–130 per lead.</p>
+
+    <p>For a business where the average job value is £500+, that maths can work. But there's a bigger problem than the cost per click.</p>
+
+    <h2>The Hidden Cost of Google Ads: The Tap-Off Problem</h2>
+
+    <p>The most significant issue with Google Ads for small businesses isn't the cost per click. It's what happens when you stop paying.</p>
+
+    <p>Stop running your ads — for any reason, whether it's budget pressure, a holiday, or a quiet month — and your visibility disappears immediately. The moment your ads pause, you're gone from the top of Google. Every pound you've spent has bought you visibility only for the time the ads were running. There's no lasting value, no compounding effect, and no asset that continues working for you.</p>
+
+    <div class="callout">
+      <div class="callout-title">The core problem with Google Ads</div>
+      <p>You're renting visibility rather than building it.</p>
+      <p>Every month you pay, you appear. Every month you stop paying, you disappear.</p>
+      <p>After 12 months of Google Ads spend, your position in search is identical to where you were before you started.</p>
+    </div>
+
+    <h2>What SEO Blog Content Does Differently</h2>
+
+    <p>SEO blog content — articles written specifically to rank for the searches your customers are making — works on a completely different model. Instead of paying for each click, you invest once in creating a piece of content that earns its place in Google's search results organically.</p>
+
+    <p>A well-written, properly optimised blog article targeting a realistic keyword can rank on page one of Google within 8–16 weeks. Once it's there, it stays there — and it keeps driving traffic without any ongoing cost.</p>
+
+    <p>Five articles targeting five different keywords means five potential page-one positions. Each one compounds the others — a site with consistent, quality content builds authority over time, making each subsequent article easier to rank.</p>
+
+    <h2>The Cost Comparison: Google Ads vs 5 Blog Articles</h2>
+
+    <p>Here's what the numbers look like over two years for a typical Surrey or Sussex small business:</p>
+
+    <div class="table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Google Ads</th>
+            <th>5 SEO Blog Articles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Monthly cost</td><td>£300–600/month ongoing</td><td>£400 one-off (then free)</td></tr>
+          <tr><td>Year 1 total</td><td>£3,600–7,200</td><td>£400</td></tr>
+          <tr><td>Year 2 total</td><td>£7,200–14,400</td><td>Still £400</td></tr>
+          <tr><td>Stop paying?</td><td>Traffic stops immediately</td><td>Articles keep ranking</td></tr>
+          <tr><td>Builds over time?</td><td>No — resets every month</td><td>Yes — each article compounds</td></tr>
+          <tr><td>Targets new keywords?</td><td>Only what you pay for</td><td>Naturally attracts related searches</td></tr>
+          <tr><td>Trust signal to visitor?</td><td>Marked as 'Sponsored'</td><td>Organic result — no ad label</td></tr>
+          <tr><td>Best for</td><td>Immediate short-term traffic</td><td>Sustainable long-term growth</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Five SEO blog articles at Wordwise's starter rate cost £400 in total — a one-off investment. A modest Google Ads budget of £300/month over the same period costs £7,200. The SEO articles are still ranking and driving traffic at the end of year two. The Google Ads budget has been completely consumed.</p>
+
+    <h2>The Credibility Difference</h2>
+
+    <p>There's one more factor the cost comparison doesn't capture: how visitors perceive each type of result.</p>
+
+    <p>Google Ads results are labelled 'Sponsored' in the search results. Many users actively skip sponsored results, especially for service-based searches where trust matters. Research consistently shows that organic search results — the ones that rank based on quality rather than budget — carry significantly more credibility than paid ads.</p>
+
+    <p>When a potential customer finds your business through a well-written blog article, they've already received value from you before making contact. The article has answered a question, demonstrated your expertise, and built trust. That's a meaningfully different starting point than a click from an ad.</p>
+
+    <h2>When Google Ads Does Make Sense</h2>
+
+    <p>In fairness, Google Ads isn't always the wrong choice. It makes sense when:</p>
+
+    <ul>
+      <li>You need visibility immediately — for a new business launch or a time-sensitive promotion</li>
+      <li>You're in a highly competitive market where organic ranking takes longer</li>
+      <li>You have a high-value product or service where even one conversion justifies significant ad spend</li>
+      <li>You're running a short campaign for a specific event or seasonal push</li>
+    </ul>
+
+    <p>The problem is that most small businesses in Surrey and Sussex use Google Ads as a permanent visibility strategy rather than a tactical short-term tool — and that's where the cost becomes difficult to justify.</p>
+
+    <h2>The Practical Alternative: Start With 5 Articles</h2>
+
+    <p>For most local service businesses in Surrey and Sussex, a better approach than Google Ads is a focused initial investment in SEO blog content:</p>
+
+    <ul>
+      <li>Choose 5 keywords your potential customers are actually searching for</li>
+      <li>Publish one well-written, properly optimised article per keyword</li>
+      <li>Wait 8–16 weeks for rankings to develop</li>
+      <li>Reinvest any savings from reduced ad spend into more content</li>
+    </ul>
+
+    <p>The result is a growing library of content that builds authority, drives organic traffic, and compounds in value over time — rather than a monthly cost that delivers nothing lasting.</p>
+
+  </div>
+
+  <div class="article-cta">
+    <h3>Want someone to do this for you?</h3>
+    <p>Wordwise writes SEO blog articles for small businesses in Surrey, Sussex, and across the UK. Free sample article for new clients — see the quality before you commit to anything.</p>
+    <a href="/index.html#contact">Get a free sample article →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Word<span>wise</span></div>
+  <p>© 2026 Wordwise · Freelance SEO Copywriter · UK-based, working nationwide</p>
+</footer>
+
+</body>
+</html>
