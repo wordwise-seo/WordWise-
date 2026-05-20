@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Your Small Business Website Gets No Traffic (And How to Fix It) | Wordwise</title>
+  <meta name="description" content="Is your small business website invisible on Google? Here are the four most common reasons — and the straightforward steps to fix them without spending a fortune." />
+  <meta property="og:title" content="Why Your Small Business Website Gets No Traffic (And How to Fix It)" />
+  <meta property="og:description" content="Is your small business website invisible on Google? Here are the four most common reasons — and how to fix them." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wordwise.uk/posts/why-small-business-website-gets-no-traffic.html" />
+  <link rel="canonical" href="https://wordwise.uk/posts/why-small-business-website-gets-no-traffic.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #E8602A;
+      --black: #1A1A1A;
+      --off-white: #F7F5F2;
+      --mid: #6B6B6B;
+      --light: #E8E5E0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fff;
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--black);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-brand {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .nav-brand span { color: var(--orange); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav ul a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: #fff; }
+
+    /* HERO */
+    .post-hero {
+      background: var(--black);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+
+    .post-category {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .post-title {
+      font-size: clamp(26px, 5vw, 44px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      max-width: 740px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .post-meta {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .post-meta span { margin: 0 8px; }
+
+    /* CONTENT */
+    .post-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .post-intro {
+      font-size: 19px;
+      line-height: 1.65;
+      color: #333;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    .post-body p {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #2a2a2a;
+      margin-bottom: 22px;
+    }
+
+    .post-body h2 {
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 48px 0 16px;
+      padding-left: 16px;
+      border-left: 4px solid var(--orange);
+    }
+
+    .post-body h3 {
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 32px 0 10px;
+    }
+
+    .post-body strong {
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    /* STEPS LIST */
+    .steps-list {
+      list-style: none;
+      margin: 16px 0 24px;
+      padding: 0;
+    }
+
+    .steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--light);
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #2a2a2a;
+    }
+
+    .steps-list li:last-child { border-bottom: none; }
+
+    .step-num {
+      background: var(--orange);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* BULLET LIST */
+    .bullet-list {
+      list-style: none;
+      margin: 12px 0 24px;
+      padding: 0;
+    }
+
+    .bullet-list li {
+      padding: 8px 0 8px 22px;
+      border-bottom: 1px solid #f0ece6;
+      font-size: 16.5px;
+      line-height: 1.65;
+      color: #2a2a2a;
+      position: relative;
+    }
+
+    .bullet-list li:last-child { border-bottom: none; }
+
+    .bullet-list li::before {
+      content: "•";
+      color: var(--orange);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box {
+      background: var(--off-white);
+      border-left: 4px solid var(--orange);
+      padding: 20px 24px;
+      margin: 32px 0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .highlight-box p {
+      font-family: Arial, sans-serif;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: var(--black) !important;
+      margin-bottom: 8px !important;
+    }
+
+    .highlight-box p:last-child { margin-bottom: 0 !important; }
+
+    /* CTA BOX */
+    .cta-box {
+      background: var(--off-white);
+      border: 1px solid var(--light);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 4px 4px 0;
+      padding: 28px 32px;
+      margin: 48px 0 0;
+    }
+
+    .cta-box p {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--black);
+      margin-bottom: 14px !important;
+    }
+
+    .cta-box p:last-child { margin-bottom: 0 !important; }
+
+    .cta-link {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .cta-link:hover { opacity: 0.9; }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: var(--mid);
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .back-link:hover { color: var(--orange); }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 24px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav ul { display: none; }
+      .post-container { padding: 40px 20px 60px; }
+      .post-body h2 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://wordwise.uk">Word<span>wise</span></a>
+  <ul>
+    <li><a href="https://wordwise.uk">Home</a></li>
+    <li><a href="https://wordwise.uk/blog.html">Blog</a></li>
+    <li><a href="https://wordwise.uk/#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="post-hero">
+  <div class="post-category">SEO Tips</div>
+  <h1 class="post-title">Why Your Small Business Website Gets No Traffic (And How to Fix It)</h1>
+  <div class="post-meta">
+    <span>By Ben Adamson</span>
+    <span>·</span>
+    <span>May 2026</span>
+    <span>·</span>
+    <span>5 min read</span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="post-container">
+
+  <a class="back-link" href="https://wordwise.uk/blog.html">← Back to Blog</a>
+
+  <div class="post-intro">
+    You built a website. You spent time on it — maybe money too. You made it look good, wrote something on the homepage, and hit publish. Then nothing. No enquiries. No calls. No visitors from Google. Just silence.
+  </div>
+
+  <div class="post-body">
+
+    <p>If that sounds familiar, you're not alone. The vast majority of small business websites get almost no organic traffic — and it's rarely because the business isn't good enough. It's because of a handful of fixable problems that most business owners don't know about.</p>
+
+    <p>Here's what's going wrong, and exactly how to fix it.</p>
+
+    <h2>The uncomfortable truth about small business websites</h2>
+
+    <p>Google processes around 8.5 billion searches every day. Your potential customers are out there, searching for exactly what you offer. But Google can only send them to your website if it understands what you do, who you serve, and whether your site is worth recommending.</p>
+
+    <p>Most small business websites give Google very little to work with. And so Google sends those searchers somewhere else — usually to a competitor who has done the groundwork.</p>
+
+    <p>The good news? The groundwork isn't complicated. Here are the four most common reasons your site isn't getting traffic.</p>
+
+    <h2>Reason 1: Your website isn't optimised for search</h2>
+
+    <p>Search engine optimisation — SEO — is the process of making your website easier for Google to understand and rank. Without it, your site is essentially invisible.</p>
+
+    <p>The basics include:</p>
+
+    <ul class="bullet-list">
+      <li>Using the right keywords in your page titles and headings</li>
+      <li>Writing clear meta descriptions that tell Google what each page is about</li>
+      <li>Making sure your site loads quickly and works properly on mobile</li>
+      <li>Having a clear, logical structure that Google can crawl</li>
+    </ul>
+
+    <p>Many small business websites skip all of this — not out of laziness, but because nobody told them it mattered. If your page title just says 'Home' and your headings are vague, Google has no idea what to rank you for.</p>
+
+    <h2>Reason 2: You're not publishing anything new</h2>
+
+    <p>Google rewards websites that publish fresh, useful content regularly. A website that hasn't been updated in two years looks stagnant — and Google treats it that way.</p>
+
+    <p>This is where a blog becomes one of the most powerful tools a small business can have. Every new article you publish is another page Google can index, another keyword you can rank for, and another opportunity to appear in front of a potential customer.</p>
+
+    <div class="highlight-box">
+      <p>A plumber who writes a monthly article about common boiler problems in UK homes will, over time, rank for dozens of searches their competitors don't even appear for. The compound effect of consistent content is significant — and most of your competitors aren't doing it.</p>
+    </div>
+
+    <h2>Reason 3: Your pages aren't written for search</h2>
+
+    <p>There's a difference between writing for humans and writing for search. Ideally, you do both at once — but most small business website copy is written purely from the business owner's perspective, without any thought for what potential customers actually type into Google.</p>
+
+    <p>For example: a bakery in Bristol might have a page titled <strong>Our Products</strong> — but their customers are searching for <em>birthday cakes Bristol</em> or <em>custom cake delivery Bristol</em>. If those phrases don't appear naturally in your copy, Google won't connect the two.</p>
+
+    <p>Good SEO copywriting weaves the right keywords into your content in a way that reads naturally for humans and signals clearly to Google what you offer.</p>
+
+    <h2>Reason 4: Your site has no backlinks</h2>
+
+    <p>Google uses backlinks — links from other websites pointing to yours — as a measure of authority and trustworthiness. A site that other reputable websites link to is seen as more credible than one that exists in isolation.</p>
+
+    <p>Building backlinks takes time, but there are some easy wins for small businesses:</p>
+
+    <ul class="bullet-list">
+      <li>Get listed in reputable UK business directories (Yell, Thomson Local, FreeIndex)</li>
+      <li>Ask suppliers, partners, or local organisations to link to your site</li>
+      <li>Write genuinely useful content that other sites naturally want to reference</li>
+      <li>Register your Google Business Profile — it's free and signals local relevance</li>
+    </ul>
+
+    <h2>So how do you fix it?</h2>
+
+    <p>None of this requires a big agency budget or technical expertise. Here's where to start:</p>
+
+    <ul class="steps-list">
+      <li>
+        <div class="step-num">1</div>
+        <div><strong>Audit your page titles and meta descriptions.</strong> Every page on your website should have a descriptive title that includes the keyword you want to rank for. 'Home' is not a page title. 'Electrician in Manchester | ABC Electrical Services' is.</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div><strong>Start a blog — and be consistent.</strong> Even two articles a month makes a meaningful difference over six to twelve months. Focus each article on a specific question your customers ask or a topic they search for. Don't write about your business — write about what your customers need to know.</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div><strong>Get your Google Business Profile set up.</strong> If you serve a local area, this is non-negotiable. A fully completed profile — with photos, opening hours, and regular posts — can dramatically improve your visibility in local search results.</div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div><strong>Get listed in directories.</strong> Submit your business to free UK directories. It takes an afternoon and provides both backlinks and an additional route for customers to find you.</div>
+      </li>
+    </ul>
+
+    <div class="cta-box">
+      <p><strong>You don't have to do it alone.</strong></p>
+      <p>If you've read this far and thought 'I know I should be doing this, but I just don't have the time' — that's exactly the problem Wordwise exists to solve.</p>
+      <p>I write SEO blog content and website copy for small UK businesses. You don't need to become an SEO expert. You just need someone to handle the writing while you focus on running your business.</p>
+      <a class="cta-link" href="mailto:hello@wordwise.uk">Get your first article free →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Wordwise · <a href="https://wordwise.uk">wordwise.uk</a> · <a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></p>
+</footer>
+
+</body>
+</html>
