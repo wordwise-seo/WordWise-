@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Should I Start a Blog for My Business Website? | Wordwise</title>
+  <meta name="description" content="Wondering whether your small business website needs a blog? The honest answer — and what happens to businesses that don't have one." />
+  <meta property="og:title" content="Should I Start a Blog for My Business Website?" />
+  <meta property="og:description" content="Wondering whether your small business website needs a blog? The honest answer — and what happens to businesses that don't have one." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wordwise.uk/posts/should-i-start-a-blog-for-my-business-website.html" />
+  <link rel="canonical" href="https://wordwise.uk/posts/should-i-start-a-blog-for-my-business-website.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #E8602A;
+      --black: #1A1A1A;
+      --off-white: #F7F5F2;
+      --mid: #6B6B6B;
+      --light: #E8E5E0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fff;
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--black);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-brand {
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .nav-brand span { color: var(--orange); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    nav ul a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: #fff; }
+
+    .nav-cta {
+      background: var(--orange) !important;
+      color: #fff !important;
+      padding: 7px 16px;
+      border-radius: 3px;
+      font-weight: 600 !important;
+    }
+
+    /* HERO */
+    .post-hero {
+      background: var(--black);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+
+    .post-category {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+
+    .post-title {
+      font-size: clamp(26px, 5vw, 44px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.15;
+      max-width: 740px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .post-meta {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .post-meta span { margin: 0 8px; }
+
+    /* CONTENT */
+    .post-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .post-intro {
+      font-size: 19px;
+      line-height: 1.65;
+      color: #333;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    .post-body p {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #2a2a2a;
+      margin-bottom: 22px;
+    }
+
+    .post-body h2 {
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--black);
+      margin: 48px 0 16px;
+      padding-left: 16px;
+      border-left: 4px solid var(--orange);
+    }
+
+    .post-body strong {
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    /* VERDICT BOX */
+    .verdict-box {
+      background: var(--black);
+      border-radius: 3px;
+      padding: 28px 32px;
+      margin: 36px 0;
+    }
+
+    .verdict-box .verdict-label {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .verdict-box p {
+      font-family: Arial, sans-serif;
+      font-size: 16px !important;
+      line-height: 1.6 !important;
+      color: rgba(255,255,255,0.9) !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* REALITY CHECK BOX */
+    .reality-box {
+      background: var(--off-white);
+      border-left: 4px solid var(--orange);
+      padding: 24px 28px;
+      margin: 32px 0;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .reality-box .reality-label {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .reality-box p {
+      font-family: Arial, sans-serif;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: var(--black) !important;
+      margin-bottom: 10px !important;
+    }
+
+    .reality-box p:last-child { margin-bottom: 0 !important; }
+
+    /* TIMELINE */
+    .timeline {
+      margin: 24px 0;
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--light);
+    }
+
+    .timeline-item:last-child { border-bottom: none; }
+
+    .timeline-period {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
+      min-width: 100px;
+      padding-top: 2px;
+    }
+
+    .timeline-desc {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.55;
+    }
+
+    /* CTA BOX */
+    .cta-box {
+      background: var(--off-white);
+      border: 1px solid var(--light);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 4px 4px 0;
+      padding: 28px 32px;
+      margin: 48px 0 0;
+    }
+
+    .cta-box p {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--black);
+      margin-bottom: 14px !important;
+    }
+
+    .cta-box p:last-child { margin-bottom: 0 !important; }
+
+    .cta-link {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .cta-link:hover { opacity: 0.9; }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: var(--mid);
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .back-link:hover { color: var(--orange); }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 24px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav ul { display: none; }
+      .post-container { padding: 40px 20px 60px; }
+      .post-body h2 { font-size: 19px; }
+      .timeline-item { flex-direction: column; gap: 4px; }
+      .timeline-period { min-width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://wordwise.uk">Word<span>wise</span></a>
+  <ul>
+    <li><a href="https://wordwise.uk">Home</a></li>
+    <li><a href="https://wordwise.uk/blog.html">Blog</a></li>
+    <li><a href="https://wordwise.uk/packages.html">Packages</a></li>
+    <li><a href="mailto:hello@wordwise.uk" class="nav-cta">Free audit</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="post-hero">
+  <div class="post-category">Small Business Advice</div>
+  <h1 class="post-title">Should I Start a Blog for My Business Website?</h1>
+  <div class="post-meta">
+    <span>By Ben Adamson</span>
+    <span>·</span>
+    <span>May 2026</span>
+    <span>·</span>
+    <span>5 min read</span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="post-container">
+
+  <a class="back-link" href="https://wordwise.uk/blog.html">← Back to Blog</a>
+
+  <div class="post-intro">
+    It's one of the most common questions small business owners ask about their website. The honest answer is yes — but the honest reason is probably not what you'd expect.
+  </div>
+
+  <div class="post-body">
+
+    <p>Most advice about business blogging focuses on the wrong thing. You'll read articles about building a personal brand, sharing your story, or connecting with your audience. These aren't bad reasons to blog — but they're not why a blog makes a meaningful difference to most small businesses.</p>
+
+    <p>The real reason a blog matters is simpler and more mechanical than that. <strong>Every article you publish is a new page on your website that Google can index.</strong> Every page is a new opportunity to appear in a search result. Every search result is a potential customer who didn't know you existed until they typed something into Google and found you.</p>
+
+    <p>That's the case for a business blog. Not self-expression — discoverability.</p>
+
+    <h2>What a blog actually does for your Google visibility</h2>
+
+    <p>Your homepage, your services page, your about page — these are static. They say what you do, but they can only rank for a small number of searches. A florist in Dorking can rank for "florist Dorking" and a handful of related terms. That's it.</p>
+
+    <p>A blog changes the mathematics entirely. Each article targets a different search — a different question your potential customers are typing into Google. A florist who writes one article a month about wedding flowers, seasonal arrangements, flower care, and flower delivery is, over the course of a year, ranking for dozens of different searches instead of a handful.</p>
+
+    <p>The compound effect is significant. An article published in January is still ranking in December — and in the January after that. Unlike paid advertising, which stops the moment you stop paying, content accumulates. A blog that has been publishing for two years is exponentially more powerful than one that started last month.</p>
+
+    <h2>What happens to businesses that don't have one</h2>
+
+    <p>The short answer: their competitors find the customers they don't.</p>
+
+    <p>In almost every local business niche I audit — plumbers, yoga teachers, beauty therapists, florists, photographers, cleaners — the businesses ranking at the top of Google for specific local searches have one thing in common. They publish content regularly. Not necessarily a lot of it. Not necessarily expertly written. But consistently, and with enough local specificity to signal to Google where they operate and what they do.</p>
+
+    <p>The businesses without content — and most small businesses are in this category — are invisible to anyone who doesn't already know they exist. They rely entirely on word of mouth, social media, and the handful of searches their homepage can rank for. There's nothing wrong with those channels. But they leave a significant amount of potential business on the table.</p>
+
+    <div class="verdict-box">
+      <div class="verdict-label">The honest answer</div>
+      <p>If you want Google to send you customers who don't already know you exist, a blog is one of the most effective things you can do. If you're happy to rely on referrals and existing customers, you can probably live without one. Most businesses, at some point, want to grow beyond their existing network. A blog is how you do that organically.</p>
+    </div>
+
+    <h2>How long before it works?</h2>
+
+    <p>This is the part most people are understandably sceptical about — and where a lot of bad advice creates unrealistic expectations in both directions.</p>
+
+    <p>A blog doesn't work overnight. Google takes time to index new content, evaluate it, and decide where to rank it. For a brand new blog on a new website, the realistic timeline looks something like this:</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-period">Month 1–2</div>
+        <div class="timeline-desc">Google discovers and indexes your articles. No meaningful traffic yet. This is normal — not a sign that it's not working.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">Month 3–4</div>
+        <div class="timeline-desc">First rankings appear, usually for longer, more specific searches. Small amounts of organic traffic start to arrive.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">Month 5–8</div>
+        <div class="timeline-desc">Rankings improve as Google builds confidence in the site. Traffic becomes noticeable. Specific articles start appearing in the top ten for their target searches.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">Month 9–12</div>
+        <div class="timeline-desc">Compounding effect begins. Earlier articles are now established. New articles rank faster because the site has more authority. Monthly organic visitors measurably growing.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-period">Year 2+</div>
+        <div class="timeline-desc">Significant, consistent organic traffic. The blog is now one of the primary ways new customers find the business — at zero cost per click.</div>
+      </div>
+    </div>
+
+    <p>The businesses that give up after three months and conclude that blogging doesn't work are the ones that never reach the point where it does. Consistency is the entire strategy.</p>
+
+    <h2>What should I write about?</h2>
+
+    <p>The most effective business blog articles are not about your business. They're about what your customers search for.</p>
+
+    <p>The best way to find article topics is to think about the questions your customers ask before they decide to buy. A cleaning company's customers ask: <em>how much does end of tenancy cleaning cost?</em> A photographer's customers ask: <em>when should I book a newborn photoshoot?</em> A yoga teacher's customers ask: <em>is Hatha yoga suitable for beginners?</em></p>
+
+    <p>Each of those questions is a blog article. Each article is a Google search your potential customer is making — and an opportunity for your business to appear in the results before they've found anyone else.</p>
+
+    <div class="reality-box">
+      <div class="reality-label">The time problem</div>
+      <p>The most common reason small business owners don't maintain a blog isn't that they don't understand the value. It's that running a business is already a full-time job, and writing two well-researched, locally targeted articles every month on top of everything else is genuinely difficult to sustain.</p>
+      <p>This is exactly the problem Wordwise exists to solve. We research the keywords, write the articles, handle the SEO metadata, and deliver content that's ready to publish — so you get the benefit of a consistent, effective blog without the time cost of maintaining one yourself.</p>
+    </div>
+
+    <h2>The bottom line</h2>
+
+    <p>A blog won't save a bad business. It won't replace the need for a good product, good service, or good relationships. But for a business that already does good work and wants more people to find it, a consistently maintained blog is one of the highest-return investments available — because the content you publish today keeps working for you for years.</p>
+
+    <p>The question isn't really whether you should start a blog. The question is how long you're willing to wait before you do.</p>
+
+    <div class="cta-box">
+      <p><strong>Not sure where to start?</strong></p>
+      <p>Wordwise offers a free website audit for small UK businesses — we'll tell you exactly what content would make the biggest difference for your site, with no obligation to go further.</p>
+      <a class="cta-link" href="mailto:hello@wordwise.uk">Get your free audit →</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Wordwise · <a href="https://wordwise.uk">wordwise.uk</a> · <a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></p>
+</footer>
+
+</body>
+</html>
