@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Website Audit for Small Businesses | Wordwise</title>
+  <meta name="description" content="Get a free website audit from Wordwise. We'll tell you exactly why Google can't find your business — and what to do about it. No obligation, no jargon." />
+  <link rel="canonical" href="https://wordwise.uk/audit.html" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #E8602A;
+      --black: #1A1A1A;
+      --off-white: #F7F5F2;
+      --mid: #6B6B6B;
+      --light: #E8E5E0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--black);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .nav-brand span { color: var(--orange); }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    nav ul a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover, nav ul a.active { color: #fff; }
+
+    .nav-cta {
+      background: var(--orange) !important;
+      color: #fff !important;
+      padding: 7px 16px;
+      border-radius: 3px;
+      font-weight: 600 !important;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--black);
+      padding: 64px 24px 56px;
+      text-align: center;
+    }
+
+    .hero-label {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 span { color: var(--orange); }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.65);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    /* TRUST STRIP */
+    .trust-strip {
+      background: var(--orange);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .trust-icon {
+      width: 18px;
+      height: 18px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: #fff;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* MAIN LAYOUT */
+    .main-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 56px 24px;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* WHAT YOU GET */
+    .what-section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+      letter-spacing: -0.3px;
+    }
+
+    .what-section > p {
+      font-size: 16px;
+      color: var(--mid);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .audit-item {
+      display: flex;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--light);
+    }
+
+    .audit-item:last-of-type { border-bottom: none; }
+
+    .audit-num {
+      width: 36px;
+      height: 36px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .audit-text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 4px;
+    }
+
+    .audit-text p {
+      font-size: 14px;
+      color: var(--mid);
+      line-height: 1.55;
+    }
+
+    /* EXAMPLES */
+    .examples-box {
+      background: var(--off-white);
+      border-radius: 4px;
+      padding: 22px 24px;
+      margin-top: 32px;
+    }
+
+    .examples-box h3 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+
+    .example-tag {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid var(--light);
+      border-radius: 3px;
+      padding: 5px 10px;
+      font-size: 13px;
+      color: #444;
+      margin: 4px 4px 4px 0;
+    }
+
+    /* FORM */
+    .form-card {
+      background: var(--off-white);
+      border: 1px solid var(--light);
+      border-radius: 4px;
+      overflow: hidden;
+      position: sticky;
+      top: 72px;
+    }
+
+    .form-header {
+      background: var(--black);
+      padding: 22px 24px;
+      text-align: center;
+    }
+
+    .form-header h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .form-header p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .form-body {
+      padding: 24px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 6px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--light);
+      border-radius: 3px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      color: var(--black);
+      background: #fff;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--orange);
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--orange);
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 3px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      transition: opacity 0.2s;
+      margin-top: 4px;
+    }
+
+    .submit-btn:hover { opacity: 0.9; }
+
+    .form-small {
+      font-size: 12px;
+      color: var(--mid);
+      text-align: center;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    /* SUCCESS STATE */
+    .success-state {
+      display: none;
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      background: #16A34A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .success-state h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+
+    .success-state p {
+      font-size: 14px;
+      color: var(--mid);
+      line-height: 1.6;
+    }
+
+    /* SOCIAL PROOF */
+    .proof-section {
+      background: var(--off-white);
+      padding: 56px 24px;
+    }
+
+    .proof-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .proof-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+
+    .proof-inner h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 32px;
+      letter-spacing: -0.3px;
+    }
+
+    .findings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .finding-card {
+      background: #fff;
+      border: 1px solid var(--light);
+      border-left: 3px solid var(--orange);
+      border-radius: 0 3px 3px 0;
+      padding: 18px 20px;
+    }
+
+    .finding-type {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 6px;
+    }
+
+    .finding-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .finding-desc {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.5;
+    }
+
+    /* HOW IT WORKS */
+    .process-section {
+      padding: 56px 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .process-section .proof-label { margin-bottom: 12px; }
+
+    .process-section h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 36px;
+      letter-spacing: -0.3px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .step {
+      text-align: center;
+    }
+
+    .step-circle {
+      width: 48px;
+      height: 48px;
+      background: var(--black);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 auto 14px;
+    }
+
+    .step h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 6px;
+    }
+
+    .step p {
+      font-size: 13px;
+      color: var(--mid);
+      line-height: 1.55;
+    }
+
+    /* CTA BANNER */
+    .cta-banner {
+      background: var(--black);
+      padding: 56px 24px;
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.3px;
+    }
+
+    .cta-banner p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+      max-width: 440px;
+      margin: 0 auto 28px;
+    }
+
+    .cta-main {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 13px 30px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .cta-main:hover { opacity: 0.9; }
+
+    /* FOOTER */
+    footer {
+      background: var(--black);
+      border-top: 1px solid #333;
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+    }
+
+    footer a { color: var(--orange); text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .main-wrap { grid-template-columns: 1fr; }
+      .form-card { position: static; }
+      .findings-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .trust-strip { gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://wordwise.uk">Word<span>wise</span></a>
+  <ul>
+    <li><a href="https://wordwise.uk">Home</a></li>
+    <li><a href="https://wordwise.uk/blog.html">Blog</a></li>
+    <li><a href="https://wordwise.uk/packages.html">Packages</a></li>
+    <li><a href="https://wordwise.uk/audit.html" class="active nav-cta">Free audit</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">100% Free — No Obligation</div>
+  <h1>Find out why Google<br><span>can't find your business</span></h1>
+  <p>We audit your website and tell you exactly what's stopping customers from finding you — for free, within 48 hours.</p>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <div class="trust-icon">✓</div>
+    No cost, no commitment
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">✓</div>
+    Response within 48 hours
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">✓</div>
+    Specific to your actual website
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon">✓</div>
+    No jargon — plain English
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="main-wrap">
+
+  <!-- LEFT — WHAT YOU GET -->
+  <div class="what-section">
+    <h2>What your free audit covers</h2>
+    <p>We look at the specific technical and content issues that stop Google from ranking your site — and tell you what to fix and why it matters.</p>
+
+    <div class="audit-item">
+      <div class="audit-num">1</div>
+      <div class="audit-text">
+        <h3>Title tag and meta description</h3>
+        <p>The two most important elements on every page. We check whether Google is reading a searchable description of your business — or just your brand name with nothing else.</p>
+      </div>
+    </div>
+
+    <div class="audit-item">
+      <div class="audit-num">2</div>
+      <div class="audit-text">
+        <h3>Local keyword targeting</h3>
+        <p>Is your location visible in the right places? A business in Dorking that doesn't mention Dorking in its page titles is invisible to local searches. We check every key signal.</p>
+      </div>
+    </div>
+
+    <div class="audit-item">
+      <div class="audit-num">3</div>
+      <div class="audit-text">
+        <h3>Grammar and credibility errors</h3>
+        <p>Typos, broken buttons, grammar errors, and outdated copyright dates. Small things that erode trust with visitors before they've read a word of your content.</p>
+      </div>
+    </div>
+
+    <div class="audit-item">
+      <div class="audit-num">4</div>
+      <div class="audit-text">
+        <h3>Mobile and accessibility issues</h3>
+        <p>Google penalises sites that prevent mobile users from zooming. We check your viewport settings and flag anything that could be affecting your mobile ranking.</p>
+      </div>
+    </div>
+
+    <div class="audit-item">
+      <div class="audit-num">5</div>
+      <div class="audit-text">
+        <h3>Content opportunities</h3>
+        <p>What searches could your business rank for — that no one is competing for yet? We identify the specific local keyword gaps your site could fill with one or two well-targeted articles.</p>
+      </div>
+    </div>
+
+    <div class="examples-box">
+      <h3>Recent findings from audited sites</h3>
+      <span class="example-tag">"HELICOPER TRAINING" — missing T</span>
+      <span class="example-tag">BOOK NOW links back to homepage</span>
+      <span class="example-tag">Title tag just "Home"</span>
+      <span class="example-tag">Instagram feed showing error</span>
+      <span class="example-tag">Copyright © 2017</span>
+      <span class="example-tag">Meta description 216 characters</span>
+      <span class="example-tag">Gallery says "EXAMPLE"</span>
+      <span class="example-tag">user-scalable=no penalty</span>
+    </div>
+  </div>
+
+  <!-- RIGHT — FORM -->
+  <div class="form-card">
+    <div class="form-header">
+      <h2>Request your free audit</h2>
+      <p>We'll be in touch within 48 hours</p>
+    </div>
+
+    <div class="form-body" id="formWrap">
+      <form id="auditForm"
+        action="https://formspree.io/f/hello@wordwise.uk"
+        method="POST"
+        onsubmit="handleSubmit(event)">
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business" placeholder="Smith Photography" required />
+        </div>
+
+        <div class="field">
+          <label for="website">Your website URL</label>
+          <input type="url" id="website" name="website" placeholder="https://yourwebsite.co.uk" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Your email address</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourbusiness.co.uk" required />
+        </div>
+
+        <div class="field">
+          <label for="location">Your location</label>
+          <input type="text" id="location" name="location" placeholder="Dorking, Surrey" />
+        </div>
+
+        <div class="field">
+          <label for="goal">What's your main goal? <span style="font-weight:400;color:#999">(optional)</span></label>
+          <select id="goal" name="goal">
+            <option value="">Select one...</option>
+            <option>Get found on Google by local customers</option>
+            <option>Get more enquiries through my website</option>
+            <option>I need a new website</option>
+            <option>I want to start a blog but don't know where to begin</option>
+            <option>Not sure — just want to know what's wrong</option>
+          </select>
+        </div>
+
+        <input type="hidden" name="_subject" value="New free audit request — Wordwise" />
+        <input type="hidden" name="_next" value="https://wordwise.uk/audit.html" />
+
+        <button type="submit" class="submit-btn">Send my audit request →</button>
+      </form>
+
+      <p class="form-small">Your details are used only to send your audit. We don't share them with anyone or add you to a mailing list without asking.</p>
+    </div>
+
+    <div class="success-state" id="successState">
+      <div class="success-icon">✓</div>
+      <h3>Request received</h3>
+      <p>We'll send your audit to the email address you provided within 48 hours. If you have any questions in the meantime, email <strong>hello@wordwise.uk</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- REAL FINDINGS -->
+<div class="proof-section">
+  <div class="proof-inner">
+    <div class="proof-label">What we find</div>
+    <h2>Real issues from real UK small business websites</h2>
+    <div class="findings-grid">
+
+      <div class="finding-card">
+        <div class="finding-type">Critical</div>
+        <div class="finding-title">Title tag is just the brand name — no location, no service</div>
+        <div class="finding-desc">The most common issue in the pipeline. A yoga teacher in Ashtead whose title tag reads "Emily In Yoga" — with no Ashtead, no Surrey, no yoga class mentioned — gets zero search traffic for anyone who doesn't already know her name.</div>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-type">Critical</div>
+        <div class="finding-title">Primary call-to-action button links back to the same page</div>
+        <div class="finding-desc">Found on multiple sites: the BOOK NOW button on the homepage links back to the homepage. Visitors who want to book are sent in a circle and frequently leave. A 30-second fix that directly increases conversions.</div>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-type">Warning</div>
+        <div class="finding-title">Meta description is 216 characters — the most important line is never seen</div>
+        <div class="finding-desc">Google displays around 155 characters. Sites with descriptions that run to 200+ characters have their location and service information cut off before it appears — the exact information that makes someone click.</div>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-type">Warning</div>
+        <div class="finding-title">Grammar errors on the homepage</div>
+        <div class="finding-desc">"HELICOPER TRAINING", "cooperate clients" (instead of corporate), "holoidays", "lets" (missing apostrophe). Each one is a small but unnecessary credibility concern — visible to every visitor before they've decided whether to trust the business.</div>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-type">Warning</div>
+        <div class="finding-title">Copyright 5–9 years out of date</div>
+        <div class="finding-desc">Footer copyright from 2017, 2019, or 2020 signals to potential customers that the site hasn't been maintained. A one-field update in any CMS — but it's the kind of detail that careful customers notice.</div>
+      </div>
+
+      <div class="finding-card">
+        <div class="finding-type">Opportunity</div>
+        <div class="finding-title">No locally targeted content — searches sitting empty</div>
+        <div class="finding-desc">"Yoga classes Ashtead Surrey", "helicopter trial lesson West Sussex", "newborn photographer Dorking" — real searches with real local intent and almost no competing content. The businesses that publish first own these searches.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="process-section">
+  <div class="proof-label">How it works</div>
+  <h2>Four steps from request to audit</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-circle">1</div>
+      <h3>Submit your URL</h3>
+      <p>Fill in the form with your website address and a bit about your business. Takes two minutes.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">2</div>
+      <h3>We audit the site</h3>
+      <p>We check your code, your content, your local keyword targeting, and your technical signals — the things Google actually reads.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">3</div>
+      <h3>You receive the findings</h3>
+      <p>Within 48 hours we send you a clear, specific audit — what's wrong, what it means, and how to fix it.</p>
+    </div>
+    <div class="step">
+      <div class="step-circle">4</div>
+      <h3>You decide what to do</h3>
+      <p>Fix it yourself, ask us to help, or do nothing. There's no obligation and no follow-up pressure.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Ready to find out what Google sees?</h2>
+  <p>Free, specific, within 48 hours. No obligation, no jargon.</p>
+  <a class="cta-main" href="#name" onclick="document.getElementById('name').focus()">Request your free audit →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Wordwise · <a href="https://wordwise.uk">wordwise.uk</a> · <a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('auditForm');
+    const formData = new FormData(form);
+
+    // Send to Formspree
+    fetch('https://formspree.io/f/xwvzwdnq', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        document.getElementById('formWrap').style.display = 'none';
+        document.getElementById('successState').style.display = 'block';
+      } else {
+        // Fallback — open mailto
+        const name = formData.get('name');
+        const business = formData.get('business');
+        const website = formData.get('website');
+        const email = formData.get('email');
+        const location = formData.get('location');
+        const goal = formData.get('goal');
+        const subject = encodeURIComponent('Free audit request — ' + business);
+        const body = encodeURIComponent(
+          'Name: ' + name + '\n' +
+          'Business: ' + business + '\n' +
+          'Website: ' + website + '\n' +
+          'Email: ' + email + '\n' +
+          'Location: ' + location + '\n' +
+          'Goal: ' + goal
+        );
+        window.location.href = 'mailto:hello@wordwise.uk?subject=' + subject + '&body=' + body;
+        document.getElementById('formWrap').style.display = 'none';
+        document.getElementById('successState').style.display = 'block';
+      }
+    }).catch(() => {
+      // Fallback — open mailto
+      const name = formData.get('name') || '';
+      const business = formData.get('business') || '';
+      const website = formData.get('website') || '';
+      const email = formData.get('email') || '';
+      const location = formData.get('location') || '';
+      const goal = formData.get('goal') || '';
+      const subject = encodeURIComponent('Free audit request — ' + business);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Business: ' + business + '\n' +
+        'Website: ' + website + '\n' +
+        'Email: ' + email + '\n' +
+        'Location: ' + location + '\n' +
+        'Goal: ' + goal
+      );
+      window.location.href = 'mailto:hello@wordwise.uk?subject=' + subject + '&body=' + body;
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('successState').style.display = 'block';
+    });
+  }
+</script>
+
+</body>
+</html>
