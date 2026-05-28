@@ -122,7 +122,7 @@
     <a href="#services">Services</a>
     <a href="#how">How it works</a>
     <a href="#pricing">Pricing</a> <a href="/blog.html">Blog</a>
-    <a href="#contact" class="nav-cta">Get a free sample</a>
+    <a href="/audit.html" class="nav-cta">Free audit</a>
   </div>
 </nav>
 <section id="hero">
@@ -130,7 +130,7 @@
   <h1 class="hero-headline">Clear writing that gets<br>your business <em>found</em><br>on Google.</h1>
   <p class="hero-sub">I help small UK businesses attract more customers through SEO blog writing and website copy that actually converts. No jargon. No agency fees. Just clear, human writing.</p>
   <div class="hero-actions">
-    <a href="#contact" class="btn-primary">Get a free sample article →</a>
+    <a href="/audit.html" class="btn-primary">Get your free audit →</a>
     <a href="#services" class="btn-secondary">See what I do ↓</a>
   </div>
   <div class="hero-badge"><span class="dot"></span>Available for new clients now</div>
@@ -185,24 +185,24 @@
         <div class="pricing-price">£160</div><div class="pricing-period">per month · 2 articles</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>2 SEO blog articles/month</li><li>Keyword research included</li><li>Meta descriptions included</li><li>One round of revisions</li></ul>
-        <a href="#contact" class="pricing-btn pricing-btn-outline">Get started</a>
+        <a href="/audit.html" class="pricing-btn pricing-btn-outline">Get started</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-tag">Most popular</div><div class="pricing-name">Growth Pack</div>
         <div class="pricing-price">£280</div><div class="pricing-period">per month · 4 articles</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>4 SEO blog articles/month</li><li>Keyword research included</li><li>Meta descriptions included</li><li>Monthly topic planning</li><li>One round of revisions</li></ul>
-        <a href="#contact" class="pricing-btn pricing-btn-fill">Get started</a>
+        <a href="/audit.html" class="pricing-btn pricing-btn-fill">Get started</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-tag">One-off</div><div class="pricing-name">Website Copy</div>
         <div class="pricing-price">£300</div><div class="pricing-period">one-off · up to 4 pages</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>Homepage + 3 service pages</li><li>SEO-optimised throughout</li><li>One round of revisions</li><li>Delivered within 7 days</li></ul>
-        <a href="#contact" class="pricing-btn pricing-btn-outline">Get started</a>
+        <a href="/audit.html" class="pricing-btn pricing-btn-outline">Get started</a>
       </div>
     </div>
-    <div class="pricing-note"><strong>Not sure what you need?</strong> I offer a free sample article for new clients — you see the quality before committing to anything. <a href="#contact" style="color:var(--orange);font-weight:600;margin-left:8px;text-decoration:none;">Claim yours →</a></div>
+    <div class="pricing-note"><strong>Not sure what you need?</strong> I offer a free sample article for new clients — you see the quality before committing to anything. <a href="/audit.html" style="color:var(--orange);font-weight:600;margin-left:8px;text-decoration:none;">Claim yours →</a></div>
   </div>
 </section>
 <section id="contact">
@@ -217,7 +217,7 @@
           <p style="font-family:var(--serif);font-size:22px;color:white;margin-bottom:8px;">Message sent!</p>
           <p style="font-size:15px;color:rgba(255,255,255,0.5);">Thanks for getting in touch. I'll reply within one working day.</p>
         </div>
-        <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display:flex;flex-direction:column;gap:16px;">
+        <form id="contact-form" style="display:flex;flex-direction:column;gap:16px;">
           <input type="hidden" name="form-name" value="contact">
           <div style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></div>
           <div class="form-group"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Jane Smith" required></div>
@@ -241,7 +241,11 @@
           form.addEventListener('submit',async function(e){
             e.preventDefault();
             const data=new FormData(form);
-            try{await fetch('/',{method:'POST',body:data});form.style.display='none';success.style.display='block';}
+            try{const res=await fetch('https://formspree.io/f/xwvzwdnq',{method:'POST',body:data,headers:{'Accept':'application/json'}});
+            if(res.ok){form.style.display='none';success.style.display='block';}
+            else{alert('Something went wrong. Please email hello@wordwise.uk');}}
+            catch(err){alert('Something went wrong. Please email hello@wordwise.uk');}
+
             catch(err){form.submit();}
           });
         </script>
