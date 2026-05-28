@@ -236,19 +236,28 @@
           <button type="submit" class="form-submit">Send message →</button>
         </form>
         <script>
-          const form=document.getElementById('contact-form');
-          const success=document.getElementById('form-success');
-          form.addEventListener('submit',async function(e){
-            e.preventDefault();
-            const data=new FormData(form);
-            try{const res=await fetch('https://formspree.io/f/xwvzwdnq',{method:'POST',body:data,headers:{'Accept':'application/json'}});
-            if(res.ok){form.style.display='none';success.style.display='block';}
-            else{alert('Something went wrong. Please email hello@wordwise.uk');}}
-            catch(err){alert('Something went wrong. Please email hello@wordwise.uk');}
+  var form=document.getElementById('contact-form');
+  var success=document.getElementById('form-success');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var data=new FormData(form);
+    fetch('https://formspree.io/f/xwvzwdnq',{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    }).then(function(res){
+      if(res.ok){
+        form.style.display='none';
+        success.style.display='block';
+      } else {
+        alert('Something went wrong. Please email hello@wordwise.uk');
+      }
+    }).catch(function(){
+      alert('Something went wrong. Please email hello@wordwise.uk');
+    });
+  });
+</script>
 
-
-          });
-        </script>
       </div>
       <div class="contact-info">
         <div class="contact-detail"><label>Email</label><a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></div>
