@@ -60,6 +60,28 @@
   .service-icon { width: 44px; height: 44px; background: var(--orange-light); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 20px; }
   .service-name { font-family: var(--serif); font-size: 22px; color: var(--black); margin-bottom: 10px; }
   .service-desc { font-size: 15px; color: var(--grey-dark); line-height: 1.65; font-weight: 300; }
+  /* ---- SAMPLES SECTION ---- */
+  #samples { background: #F5F4F2; padding: 100px 48px; }
+  #samples .section-inner { max-width: 900px; margin: 0 auto; }
+  #samples .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #E8602A; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  #samples .section-label::after { content: ''; flex: 0 0 32px; height: 1px; background: #E8602A; opacity: 0.5; }
+  #samples .section-title { font-family: 'DM Serif Display', Georgia, serif; font-size: clamp(32px,5vw,52px); line-height: 1.1; letter-spacing: -1px; color: #141414; margin-bottom: 20px; }
+  #samples .section-body { font-size: 17px; font-weight: 300; color: #444; line-height: 1.75; max-width: 580px; }
+  .samples-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 56px; }
+  .sample-card { background: #FDFCFB; border: 1px solid rgba(0,0,0,0.08); border-radius: 12px; padding: 32px 28px; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  .sample-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #E8602A; transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+  .sample-card:hover::before { transform: scaleX(1); }
+  .sample-niche { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #E8602A; margin-bottom: 14px; }
+  .sample-title { font-family: 'DM Serif Display', Georgia, serif; font-size: 20px; color: #141414; line-height: 1.25; margin-bottom: 10px; letter-spacing: -0.3px; }
+  .sample-keyword { font-size: 12px; color: #888; margin-bottom: 14px; font-style: italic; }
+  .sample-excerpt { font-size: 14px; color: #444; line-height: 1.7; font-weight: 300; flex: 1; margin-bottom: 22px; }
+  .sample-link { font-size: 13px; font-weight: 600; color: #E8602A; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .sample-link:hover { opacity: 0.75; }
+  .samples-note { margin-top: 40px; padding: 24px 28px; background: #FFF0EA; border-radius: 10px; font-size: 15px; color: #444; line-height: 1.6; }
+  .samples-note strong { color: #E8602A; }
+  .samples-note a { color: #E8602A; font-weight: 600; margin-left: 4px; text-decoration: none; }
+  @media(max-width:768px){ .samples-grid { grid-template-columns: 1fr; } }
+  /* ---- END SAMPLES CSS ---- */
   #how { background: var(--grey-light); }
   .steps { display: flex; flex-direction: column; margin-top: 56px; }
   .step { display: grid; grid-template-columns: 80px 1fr; padding: 32px 0; border-bottom: 1px solid rgba(0,0,0,0.07); align-items: start; }
@@ -120,18 +142,19 @@
   <div class="nav-logo">Word<span>wise</span></div>
   <div class="nav-links">
     <a href="#services">Services</a>
+    <a href="#samples">Samples</a>
     <a href="#how">How it works</a>
-   <a href="/packages.html">Packages</a>
-  <a href="/blog.html">Blog</a>
+    <a href="/packages.html">Packages</a>
+    <a href="/blog.html">Blog</a>
     <a href="/audit.html" class="nav-cta">Free audit</a>
   </div>
 </nav>
 <section id="hero">
-  <div class="hero-eyebrow">SEO Copywriting · UK-based</div>
+  <div class="hero-eyebrow">SEO Copywriting &middot; UK-based</div>
   <h1 class="hero-headline">Clear writing that gets<br>your business <em>found</em><br>on Google.</h1>
   <p class="hero-sub">I help small UK businesses attract more customers through SEO blog writing and website copy that actually converts. No jargon. No agency fees. Just clear, human writing.</p>
   <div class="hero-actions">
-    <a href="/audit.html" class="btn-primary">Get your free audit →</a>
+    <a href="/audit.html" class="btn-primary">Get your free audit &rarr;</a>
     <a href="#services" class="btn-secondary">See what I do ↓</a>
   </div>
   <div class="hero-badge"><span class="dot"></span>Available for new clients now</div>
@@ -140,26 +163,59 @@
   <div class="section-inner">
     <div class="section-label">The problem</div>
     <h2 class="section-title" style="color:white">Sound familiar?</h2>
-    <p class="section-body">Most small business websites are invisible on Google. Not because the business isn't good — but because nobody's writing for it.</p>
+    <p class="section-body">Most small business websites are invisible on Google. Not because the business isn't good &mdash; but because nobody's writing for it.</p>
     <div class="problem-grid">
-      <div class="problem-item"><div class="problem-number">01</div><p class="problem-text">Your website is live — but nobody's finding it through search.</p></div>
+      <div class="problem-item"><div class="problem-number">01</div><p class="problem-text">Your website is live &mdash; but nobody's finding it through search.</p></div>
       <div class="problem-item"><div class="problem-number">02</div><p class="problem-text">You know you should be blogging, but you never have the time.</p></div>
       <div class="problem-item"><div class="problem-number">03</div><p class="problem-text">You've tried writing it yourself and it just doesn't sound right.</p></div>
       <div class="problem-item"><div class="problem-number">04</div><p class="problem-text">Agency content is cold, expensive, and clearly written by someone who doesn't get your business.</p></div>
     </div>
-    <div class="problem-cta"><p>That's where <span>Wordwise</span> comes in. Affordable, human-written SEO content — built around your business, not a template.</p></div>
+    <div class="problem-cta"><p>That's where <span>Wordwise</span> comes in. Affordable, human-written SEO content &mdash; built around your business, not a template.</p></div>
   </div>
 </section>
 <section id="services">
   <div class="section-inner">
     <div class="section-label">What I do</div>
     <h2 class="section-title">Services</h2>
-    <p class="section-body">Everything you need to grow your organic traffic — without the agency price tag.</p>
+    <p class="section-body">Everything you need to grow your organic traffic &mdash; without the agency price tag.</p>
     <div class="services-grid">
       <div class="service-card"><div class="service-icon">✍️</div><h3 class="service-name">SEO Blog Writing</h3><p class="service-desc">Regular articles written around the keywords your customers are already searching for. Published-ready, every time.</p></div>
-      <div class="service-card"><div class="service-icon">🖥️</div><h3 class="service-name">Website Copywriting</h3><p class="service-desc">Homepages, about pages, service pages — written to convert visitors into enquiries. Clear, confident, and on-brand.</p></div>
-      <div class="service-card"><div class="service-icon">📅</div><h3 class="service-name">Monthly Content Packages</h3><p class="service-desc">A fixed monthly rate for consistent publishing. More content, more traffic, more customers — predictably.</p></div>
+      <div class="service-card"><div class="service-icon">🖥️</div><h3 class="service-name">Website Copywriting</h3><p class="service-desc">Homepages, about pages, service pages &mdash; written to convert visitors into enquiries. Clear, confident, and on-brand.</p></div>
+      <div class="service-card"><div class="service-icon">📅</div><h3 class="service-name">Monthly Content Packages</h3><p class="service-desc">A fixed monthly rate for consistent publishing. More content, more traffic, more customers &mdash; predictably.</p></div>
       <div class="service-card"><div class="service-icon">🛒</div><h3 class="service-name">Product Descriptions</h3><p class="service-desc">Persuasive, searchable product copy for online stores. Written to rank and to sell.</p></div>
+    </div>
+  </div>
+</section>
+<section id="samples">
+  <div class="section-inner">
+    <div class="section-label">Writing samples</div>
+    <h2 class="section-title">What Wordwise looks like in practice</h2>
+    <p class="section-body">Every article is keyword-researched, locally targeted, and written for a real audience &mdash; not a search engine.</p>
+    <div class="samples-grid">
+      <div class="sample-card">
+        <div class="sample-niche">Aviation &middot; West Sussex</div>
+        <h3 class="sample-title">Helicopter Trial Lesson in West Sussex</h3>
+        <p class="sample-keyword">Target keyword: helicopter trial lesson West Sussex</p>
+        <p class="sample-excerpt">A helicopter trial lesson is the most direct way to find out whether flight training is right for you. Forty-five minutes in the air above the Sussex coastline, with an instructor who hands you control of the aircraft within the first few minutes. No commitment. No prior experience required.</p>
+        <a href="/posts/sample-helicopter-trial-lesson-west-sussex.html" class="sample-link">Read full sample &rarr;</a>
+      </div>
+      <div class="sample-card">
+        <div class="sample-niche">Photography &middot; Surrey</div>
+        <h3 class="sample-title">Newborn Photography Sessions in Dorking, Surrey</h3>
+        <p class="sample-keyword">Target keyword: newborn photography sessions Dorking Surrey</p>
+        <p class="sample-excerpt">The first days and weeks with a newborn pass faster than anyone warns you they will. The particular weight of a sleeping baby, the way tiny fingers curl, the expressions that flicker across a new face &mdash; these are the details that blur and soften in memory even as you're living them.</p>
+        <a href="/posts/sample-newborn-photography-dorking-surrey.html" class="sample-link">Read full sample &rarr;</a>
+      </div>
+      <div class="sample-card">
+        <div class="sample-niche">Wellness &middot; Surrey</div>
+        <h3 class="sample-title">Yoga for Perimenopause in Surrey</h3>
+        <p class="sample-keyword">Target keyword: yoga for perimenopause Surrey</p>
+        <p class="sample-excerpt">Perimenopause does things to a woman's body that nobody adequately prepares you for. The broken sleep, the heat that arrives without warning, the brain that won't cooperate. Yoga is one of the most effective tools available &mdash; if you find the right class.</p>
+        <a href="/posts/sample-yoga-perimenopause-surrey.html" class="sample-link">Read full sample &rarr;</a>
+      </div>
+    </div>
+    <div class="samples-note">
+      <strong>Want to see what Wordwise would write for your business?</strong> Every new client receives a free sample article &mdash; written around your specific keywords, location, and audience before you commit to anything.<a href="/audit.html">Get yours free &rarr;</a>
     </div>
   </div>
 </section>
@@ -169,7 +225,7 @@
     <h2 class="section-title">How it works</h2>
     <p class="section-body">Simple, fast, no back-and-forth headaches.</p>
     <div class="steps">
-      <div class="step"><div class="step-num">01</div><div class="step-content"><h3>We have a quick chat</h3><p>Tell me about your business, your customers, and your goals. No lengthy briefs — just a straightforward conversation.</p></div></div>
+      <div class="step"><div class="step-num">01</div><div class="step-content"><h3>We have a quick chat</h3><p>Tell me about your business, your customers, and your goals. No lengthy briefs &mdash; just a straightforward conversation.</p></div></div>
       <div class="step"><div class="step-num">02</div><div class="step-content"><h3>I research, write, and refine</h3><p>I find the right keywords, write your content, and polish it. You'll get a Google Doc with article, meta title, and description.</p></div></div>
       <div class="step"><div class="step-num">03</div><div class="step-content"><h3>You review and publish</h3><p>Read it over, request any changes (one round included), and publish. No complicated approval chains.</p></div></div>
     </div>
@@ -183,34 +239,34 @@
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-tag">Starter</div><div class="pricing-name">Starter Pack</div>
-        <div class="pricing-price">£160</div><div class="pricing-period">per month · 2 articles</div>
+        <div class="pricing-price">£160</div><div class="pricing-period">per month &middot; 2 articles</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>2 SEO blog articles/month</li><li>Keyword research included</li><li>Meta descriptions included</li><li>One round of revisions</li></ul>
         <a href="/audit.html" class="pricing-btn pricing-btn-outline">Get started</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-tag">Most popular</div><div class="pricing-name">Growth Pack</div>
-        <div class="pricing-price">£280</div><div class="pricing-period">per month · 4 articles</div>
+        <div class="pricing-price">£280</div><div class="pricing-period">per month &middot; 4 articles</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>4 SEO blog articles/month</li><li>Keyword research included</li><li>Meta descriptions included</li><li>Monthly topic planning</li><li>One round of revisions</li></ul>
         <a href="/audit.html" class="pricing-btn pricing-btn-fill">Get started</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-tag">One-off</div><div class="pricing-name">Website Copy</div>
-        <div class="pricing-price">£300</div><div class="pricing-period">one-off · up to 4 pages</div>
+        <div class="pricing-price">£300</div><div class="pricing-period">one-off &middot; up to 4 pages</div>
         <div class="pricing-divider"></div>
         <ul class="pricing-features"><li>Homepage + 3 service pages</li><li>SEO-optimised throughout</li><li>One round of revisions</li><li>Delivered within 7 days</li></ul>
         <a href="/audit.html" class="pricing-btn pricing-btn-outline">Get started</a>
       </div>
     </div>
-    <div class="pricing-note"><strong>Not sure what you need?</strong> I offer a free sample article for new clients — you see the quality before committing to anything. <a href="/audit.html" style="color:var(--orange);font-weight:600;margin-left:8px;text-decoration:none;">Claim yours →</a></div>
+    <div class="pricing-note"><strong>Not sure what you need?</strong> I offer a free sample article for new clients &mdash; you see the quality before committing to anything. <a href="/audit.html" style="color:var(--orange);font-weight:600;margin-left:8px;text-decoration:none;">Claim yours &rarr;</a></div>
   </div>
 </section>
 <section id="contact">
   <div class="section-inner">
     <div class="section-label">Get in touch</div>
     <h2 class="section-title">Let's work together</h2>
-    <p class="section-body">Whether you have a project in mind or just want to find out if Wordwise is the right fit — drop me a message.</p>
+    <p class="section-body">Whether you have a project in mind or just want to find out if Wordwise is the right fit &mdash; drop me a message.</p>
     <div class="contact-layout">
       <div class="contact-form">
         <div id="form-success" style="display:none;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:12px;padding:32px;text-align:center;">
@@ -234,7 +290,7 @@
             </select>
           </div>
           <div class="form-group"><label for="message">Anything else?</label><textarea id="message" name="message" placeholder="Tell me a bit about your business..."></textarea></div>
-          <button type="submit" class="form-submit">Send message →</button>
+          <button type="submit" class="form-submit">Send message &rarr;</button>
         </form>
         <script>
   var form=document.getElementById('contact-form');
@@ -258,22 +314,20 @@
     });
   });
 </script>
-
       </div>
       <div class="contact-info">
         <div class="contact-detail"><label>Email</label><a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></div>
         <div class="contact-detail"><label>Website</label><a href="https://wordwise.uk/">wordwise.uk</a></div>
-
-        <div class="contact-detail"><label>Based in</label><p>United Kingdom · Working nationwide</p></div>
+        <div class="contact-detail"><label>Based in</label><p>United Kingdom &middot; Working nationwide</p></div>
         <div class="contact-detail"><label>Availability</label><p style="color:#22C55E;font-weight:500;">● Available for new clients now</p></div>
-        <div class="contact-promise"><p><strong>I reply within one working day.</strong> If you're not sure what you need, just say so — I'm happy to point you in the right direction.</p></div>
+        <div class="contact-promise"><p><strong>I reply within one working day.</strong> If you're not sure what you need, just say so &mdash; I'm happy to point you in the right direction.</p></div>
       </div>
     </div>
   </div>
 </section>
 <footer>
   <div class="footer-logo">Word<span>wise</span></div>
-  <p>© 2026 Wordwise · Freelance SEO Copywriter · UK-based, working nationwide</p>
+  <p>© 2026 Wordwise &middot; Freelance SEO Copywriter &middot; UK-based, working nationwide</p>
 </footer>
 </body>
 </html>
