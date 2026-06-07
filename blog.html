@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | SEO Tips for Small Businesses — Wordwise</title>
+<meta name="description" content="SEO and copywriting tips for small UK businesses. Learn how to get found on Google, write better website copy, and grow your organic traffic — from the Wordwise blog.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --orange: #E8602A; --orange-light: #FFF0EA; --black: #141414;
+    --grey-dark: #444; --grey-mid: #888; --grey-light: #F5F4F2;
+    --white: #FDFCFB; --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white); color: var(--black); line-height: 1.6; }
+
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(253,252,251,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .nav-logo { font-family: var(--serif); font-size: 22px; color: var(--black); text-decoration: none; }
+  .nav-logo span { color: var(--orange); }
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--grey-dark); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--orange); }
+  .nav-cta { background: var(--orange) !important; color: white !important; padding: 10px 22px; border-radius: 6px; font-weight: 600 !important; }
+
+  .hero { padding: 140px 48px 60px; max-width: 900px; margin: 0 auto; }
+  .hero-label { font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .hero-label::after { content: ''; flex: 0 0 32px; height: 1px; background: var(--orange); opacity: 0.5; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(36px, 5vw, 56px); line-height: 1.1; letter-spacing: -1px; color: var(--black); margin-bottom: 20px; }
+  .hero p { font-size: 17px; font-weight: 300; color: var(--grey-dark); max-width: 520px; line-height: 1.75; }
+
+  .blog-grid { padding: 40px 48px 100px; max-width: 900px; margin: 0 auto; }
+
+  .post-card { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start; padding: 36px 0; border-bottom: 1px solid rgba(0,0,0,0.07); text-decoration: none; color: inherit; transition: opacity 0.2s; }
+  .post-card:hover { opacity: 0.75; }
+  .post-card:last-child { border-bottom: none; }
+  .post-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+  .post-title { font-family: var(--serif); font-size: 26px; line-height: 1.2; color: var(--black); margin-bottom: 10px; }
+  .post-excerpt { font-size: 15px; font-weight: 300; color: var(--grey-dark); line-height: 1.65; margin-bottom: 16px; }
+  .post-meta { font-size: 13px; color: var(--grey-mid); }
+  .post-arrow { font-size: 22px; color: var(--orange); padding-top: 6px; flex-shrink: 0; }
+
+  .empty-state { text-align: center; padding: 80px 40px; }
+  .empty-state h2 { font-family: var(--serif); font-size: 28px; color: var(--black); margin-bottom: 12px; }
+  .empty-state p { font-size: 16px; color: var(--grey-dark); font-weight: 300; }
+
+  footer { background: #0D0D0D; padding: 28px 48px; display: flex; align-items: center; justify-content: space-between; }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.25); }
+  footer .footer-logo { font-family: var(--serif); font-size: 16px; color: rgba(255,255,255,0.4); }
+  footer .footer-logo span { color: var(--orange); }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 20px; }
+    .nav-links { gap: 16px; }
+    .hero, .blog-grid { padding-left: 20px; padding-right: 20px; }
+    .post-card { grid-template-columns: 1fr; }
+    .post-arrow { display: none; }
+    footer { padding: 20px; flex-direction: column; gap: 8px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/index.html" class="nav-logo">Word<span>wise</span></a>
+  <div class="nav-links">
+    <a href="/index.html#services">Services</a>
+    <a href="/health-wellness-marketing.html">Wellness Hub</a>
+    <a href="/blog.html" class="active">Blog</a>
+    <a href="/audit.html" class="nav-cta">Free audit</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-label">The Wordwise Blog</div>
+  <h1>SEO and copywriting tips for small businesses</h1>
+  <p>Practical advice on getting found on Google, writing better website copy, and growing your organic traffic — without the jargon.</p>
+</div>
+
+<div class="blog-grid" id="posts">
+
+  <!-- PASTE NEW POST CARDS HERE — copy the template below for each new post -->
+
+  <!-- POST CARD TEMPLATE (copy this block for each new article):
+  <a href="/posts/your-post-filename.html" class="post-card">
+    <div>
+      <div class="post-tag">SEO Tips</div>
+      <div class="post-title">Your Article Title Goes Here</div>
+      <div class="post-excerpt">A short 1-2 sentence summary of what the article covers. Keep it punchy and benefit-led.</div>
+      <div class="post-meta">DD Month YYYY · X min read</div>
+    </div>
+    <div class="post-arrow">→</div>
+  </a>
+  -->
+
+  <!-- STARTER POST — replace with your first real article when ready -->
+
+
+  <!-- YOGA & WELLNESS HUB -->
+
+  <a href="/yoga-studio-marketing.html" class="post-card">
+    <div>
+      <div class="post-tag">Yoga Marketing</div>
+      <div class="post-title">Yoga Studio Marketing &mdash; The Complete Guide</div>
+      <div class="post-excerpt">Every marketing channel available to yoga studio owners and teachers &mdash; SEO, Google, social, partnerships, and paid ads. What works and what to prioritise first.</div>
+      <div class="post-meta">June 2026 &middot; 10 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/seo-for-yoga-studios.html" class="post-card">
+    <div>
+      <div class="post-tag">Yoga SEO</div>
+      <div class="post-title">SEO for Yoga Studios &mdash; The Complete Hub</div>
+      <div class="post-excerpt">Title tags, meta descriptions, blog content, specialist class targeting, Google Business Profile &mdash; everything a yoga studio needs to rank on Google.</div>
+      <div class="post-meta">June 2026 &middot; 10 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/how-to-get-more-yoga-clients.html" class="post-card">
+    <div>
+      <div class="post-tag">Yoga Clients</div>
+      <div class="post-title">How to Get More Yoga Clients</div>
+      <div class="post-excerpt">Eight practical strategies for attracting new yoga students and clients &mdash; from Google optimisation and specialist class targeting to corporate contracts and private clients.</div>
+      <div class="post-meta">June 2026 &middot; 8 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/yoga-marketing-ideas.html" class="post-card">
+    <div>
+      <div class="post-tag">Yoga Marketing</div>
+      <div class="post-title">25 Yoga Marketing Ideas for Studios and Teachers</div>
+      <div class="post-excerpt">Twenty-five practical marketing ideas covering Google, partnerships, social media, events, and community. Some take five minutes. Some take five months. All of them work.</div>
+      <div class="post-meta">June 2026 &middot; 8 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/best-keywords-for-yoga-studios.html" class="post-card">
+    <div>
+      <div class="post-tag">Keywords</div>
+      <div class="post-title">The Best Keywords for Yoga Studios in Surrey and the UK</div>
+      <div class="post-excerpt">Which keyword clusters drive the most bookings, which are easiest to rank for, and where to start if your studio has zero Google presence.</div>
+      <div class="post-meta">June 2026 &middot; 7 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/local-seo-for-yoga-studios.html" class="post-card">
+    <div>
+      <div class="post-tag">Local SEO</div>
+      <div class="post-title">Local SEO for Yoga Studios &mdash; A Practical Guide</div>
+      <div class="post-excerpt">Google Business Profile, NAP consistency, reviews, location signals, and local link building. How to appear in map results and attract students in your area.</div>
+      <div class="post-meta">June 2026 &middot; 8 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/yoga-teacher-training-seo.html" class="post-card">
+    <div>
+      <div class="post-tag">Teacher Training</div>
+      <div class="post-title">How to Attract Yoga Teacher Training Applicants Through Google</div>
+      <div class="post-excerpt">Teacher training is the highest-value keyword cluster in the yoga niche. One well-ranked page can generate applications worth thousands of pounds per intake.</div>
+      <div class="post-meta">June 2026 &middot; 7 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/why-yoga-studio-not-showing-up-on-google.html" class="post-card">
+    <div>
+      <div class="post-tag">Yoga SEO</div>
+      <div class="post-title">Why Your Yoga Studio Is Not Showing Up on Google</div>
+      <div class="post-excerpt">After auditing more than five yoga studios in Surrey, the same problems come up every time. Seven fixable issues &mdash; none of them about the quality of the classes.</div>
+      <div class="post-meta">June 2026 &middot; 7 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/how-to-get-corporate-yoga-clients.html" class="post-card">
+    <div>
+      <div class="post-tag">Corporate Yoga</div>
+      <div class="post-title">How to Get Corporate Yoga Clients</div>
+      <div class="post-excerpt">One corporate contract is worth more per month than ten individual students. How to pitch, win, and retain corporate wellness clients.</div>
+      <div class="post-meta">June 2026 &middot; 6 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/how-to-get-private-yoga-clients.html" class="post-card">
+    <div>
+      <div class="post-tag">Private Yoga</div>
+      <div class="post-title">How to Get Private Yoga Clients</div>
+      <div class="post-excerpt">Private clients pay premium rates and become long-term relationships. How to attract one-to-one yoga clients through Google, referrals, and targeted content.</div>
+      <div class="post-meta">June 2026 &middot; 6 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/digital-marketing-for-yoga-studios.html" class="post-card">
+    <div>
+      <div class="post-tag">Digital Marketing</div>
+      <div class="post-title">Digital Marketing for Yoga Studios</div>
+      <div class="post-excerpt">SEO, paid ads, social media, email, and content. Which channels are worth the investment for yoga studios and which to deprioritise.</div>
+      <div class="post-meta">June 2026 &middot; 7 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <a href="/posts/google-business-profile-for-yoga-studios.html" class="post-card">
+    <div>
+      <div class="post-tag">Google</div>
+      <div class="post-title">Google Business Profile for Yoga Studios &mdash; Complete Setup Guide</div>
+      <div class="post-excerpt">How to set up, complete, and optimise your Google Business Profile to appear in local map results and attract more yoga students.</div>
+      <div class="post-meta">June 2026 &middot; 6 min read</div>
+    </div>
+    <div class="post-arrow">&rarr;</div>
+  </a>
+
+  <!-- EXISTING POSTS -->
+  <a href="/posts/how-to-get-your-small-business-found-on-google.html" class="post-card">
+    <div>
+      <div class="post-tag">SEO Tips</div>
+      <div class="post-title">How to Get Your Small Business Found on Google (Without Paying for Ads)</div>
+      <div class="post-excerpt">Most small business websites are invisible on Google. Here's exactly why — and the straightforward way to fix it without spending money on paid advertising.</div>
+      <div class="post-meta">11 May 2026 · 5 min read</div>
+    </div>
+    <div class="post-arrow">→</div>
+  </a>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Word<span>wise</span></div>
+  <p>© 2026 Wordwise · Freelance SEO Copywriter · UK-based, working nationwide</p>
+</footer>
+
+</body>
+</html>
