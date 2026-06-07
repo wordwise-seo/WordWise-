@@ -1,17 +1,19 @@
 # Wordwise
 
-> Wordwise is a freelance SEO copywriting service based in Dorking, Surrey. We write locally targeted blog articles and website copy for UK small businesses.
+> Wordwise is a freelance SEO copywriting and website service based in Dorking, Surrey. We help local UK businesses get found on Google through SEO content, website builds, and Google Business Profile optimisation.
 
 ## Services
 
-- SEO blog articles — keyword-researched, locally targeted articles for small business websites
-- Website copywriting — homepages, service pages, and about pages written to rank and convert
-- Website SEO audits — free audits identifying title tag, meta description, content, and technical issues
+- Website design — clean, fast, mobile-friendly websites for local businesses
+- SEO services — keyword research, on-page optimisation, locally targeted content
+- SEO blog writing — keyword-researched articles for small business websites
+- Google Business Profile — setup, optimisation, and management
 - Monthly content packages — consistent publishing for sustained Google visibility
+- Website SEO audits — free audits identifying title tag, meta description, content, and technical issues
 
 ## Target clients
 
-Independent UK small businesses — yoga teachers, photographers, tradespeople, cleaning companies, wellness practitioners, and professional services across Surrey, Sussex, and South London.
+Independent UK small businesses — yoga studios, Pilates studios, photographers, tradespeople, cleaning companies, wellness practitioners, care homes, landscapers, and professional services across Surrey, Sussex, Hampshire, and South London.
 
 ## Key pages
 
@@ -19,6 +21,27 @@ Independent UK small businesses — yoga teachers, photographers, tradespeople, 
 - Free audit: https://wordwise.uk/audit.html
 - Packages: https://wordwise.uk/packages.html
 - Blog: https://wordwise.uk/blog.html
+
+## Health & Wellness Marketing Hub
+
+- Hub: https://wordwise.uk/health-wellness-marketing.html
+- Yoga Studio Marketing: https://wordwise.uk/yoga-studio-marketing.html
+- SEO for Yoga Studios: https://wordwise.uk/seo-for-yoga-studios.html
+- How to Get More Yoga Clients: https://wordwise.uk/how-to-get-more-yoga-clients.html
+
+## Yoga Marketing Articles
+
+- https://wordwise.uk/posts/yoga-marketing-ideas.html
+- https://wordwise.uk/posts/yoga-studio-marketing-plan.html
+- https://wordwise.uk/posts/digital-marketing-for-yoga-studios.html
+- https://wordwise.uk/posts/how-to-get-corporate-yoga-clients.html
+- https://wordwise.uk/posts/how-to-get-private-yoga-clients.html
+- https://wordwise.uk/posts/how-to-get-online-yoga-clients.html
+- https://wordwise.uk/posts/google-business-profile-for-yoga-studios.html
+- https://wordwise.uk/posts/why-yoga-studio-not-showing-up-on-google.html
+- https://wordwise.uk/posts/best-keywords-for-yoga-studios.html
+- https://wordwise.uk/posts/local-seo-for-yoga-studios.html
+- https://wordwise.uk/posts/yoga-teacher-training-seo.html
 
 ## Blog posts
 
@@ -28,6 +51,7 @@ Independent UK small businesses — yoga teachers, photographers, tradespeople, 
 - https://wordwise.uk/posts/why-small-business-website-gets-no-traffic.html
 - https://wordwise.uk/posts/should-i-start-a-blog-for-my-business-website.html
 - https://wordwise.uk/posts/google-ads-vs-seo-blog-content-surrey-sussex.html
+- https://wordwise.uk/posts/why-isnt-my-business-showing-up-on-google.html
 
 ## Contact
 
@@ -37,4 +61,4 @@ Independent UK small businesses — yoga teachers, photographers, tradespeople, 
 
 ## About
 
-Wordwise was founded by Ben Adamson in 2026. All content is 100% human-written. No AI copy. Specialising in local SEO content for UK small businesses.
+Wordwise was founded by Ben Adamson in 2026. All content is 100% human-written. No AI copy. Specialising in websites, local SEO content, and Google visibility for UK small businesses.
