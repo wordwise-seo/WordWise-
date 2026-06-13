@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RVHK0QHMM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7RVHK0QHMM');
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEO Packages & Pricing | Wordwise</title>
@@ -9,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--orange:#E8602A;--orange-light:#FFF0EA;--black:#141414;--grey-dark:#444;--grey-mid:#888;--grey-light:#F5F4F2;--white:#FDFCFB;--green:#16A34A;--blue:#1D4ED8;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
+    :root{--orange:#E8602A;--orange-light:#FFF0EA;--black:#141414;--grey-dark:#444;--grey-mid:#888;--grey-light:#F5F4F2;--white:#FDFCFB;--green:#16A34A;--serif:'DM Serif Display',Georgia,serif;--sans:'DM Sans',system-ui,sans-serif}
     html{scroll-behavior:smooth}
     body{font-family:var(--sans);background:var(--white);color:var(--black);line-height:1.6}
     nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(253,252,251,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06)}
@@ -34,13 +42,13 @@
     .packages-inner{max-width:1100px;margin:0 auto}
     .packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:0}
 
-    .pkg-card{border-radius:16px;overflow:hidden;display:flex;flex-direction:column;position:relative;border:1px solid rgba(0,0,0,0.08)}
+    .pkg-card{border-radius:16px;overflow:hidden;display:flex;flex-direction:column;position:relative;border:1px solid rgba(0,0,0,0.08);background:white}
     .pkg-card.featured{border:2px solid var(--orange);box-shadow:0 8px 40px rgba(232,96,42,0.15)}
 
     .pkg-header{padding:36px 32px 28px}
     .pkg-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:16px}
     .pkg-badge.green{background:#DCFCE7;color:var(--green)}
-    .pkg-badge.blue{background:#DBEAFE;color:var(--blue)}
+    
     .pkg-badge.red{background:#FEE2E2;color:#DC2626}
     .pkg-badge.bestseller{background:var(--orange);color:white}
 
@@ -50,14 +58,14 @@
     .pkg-desc{font-size:15px;color:var(--grey-dark);line-height:1.6;font-weight:300;margin-top:12px}
 
     .pkg-divider{height:1px;background:rgba(0,0,0,0.07);margin:0 32px}
-    .pkg-features{padding:28px 32px;flex:1;display:flex;flex-direction:column;gap:0}
+    .pkg-features{padding:28px 32px;flex:1;display:flex;flex-direction:column;gap:0;background:white}
     .pkg-feature{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(0,0,0,0.05)}
     .pkg-feature:last-child{border-bottom:none}
     .pkg-feature-check{font-size:14px;color:var(--orange);font-weight:700;flex-shrink:0;margin-top:2px}
     .pkg-feature-text{font-size:15px;color:var(--black);line-height:1.5}
     .pkg-feature-text small{display:block;font-size:13px;color:var(--grey-mid);margin-top:2px}
 
-    .pkg-footer{padding:28px 32px}
+    .pkg-footer{padding:28px 32px;background:white}
     .pkg-btn{display:block;text-align:center;padding:16px 24px;border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;transition:opacity 0.2s}
     .pkg-btn:hover{opacity:0.88}
     .pkg-btn.outline{border:2px solid var(--black);color:var(--black)}
@@ -70,7 +78,7 @@
     .pkg-card.featured .pkg-price{color:white}
     .pkg-card.featured .pkg-price span{color:rgba(255,255,255,0.4)}
     .pkg-card.featured .pkg-desc{color:rgba(255,255,255,0.6)}
-    .pkg-card.featured .pkg-divider{background:rgba(255,255,255,0.08)}
+    .pkg-card.featured .pkg-divider{background:rgba(0,0,0,0.1)}
 
     /* COMPARISON NOTE */
     #note{padding:0 48px 60px}
@@ -210,8 +218,8 @@
   <div class="note-inner">
     <div class="note-box">
       <div class="note-item">
-        <h3>Not sure which package?</h3>
-        <p>Start with the free audit. It shows exactly where your site stands and what to fix first. The right package becomes obvious once you see the data.</p>
+        <h3>Website design pricing</h3>
+        <p>One-off websites from £750 (Foundation) to £2,000 (full SEO build). Monthly packages above cover ongoing SEO content after your site is live.</p>
       </div>
       <div class="note-item">
         <h3>No long-term contracts</h3>
