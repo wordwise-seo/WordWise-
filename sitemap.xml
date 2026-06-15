@@ -4,30 +4,51 @@
   <!-- Core pages -->
   <url><loc>https://wordwise.uk/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://wordwise.uk/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/packages.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/audit.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/industries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Service pages -->
   <url><loc>https://wordwise.uk/seo-services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/website-design.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/google-business-profile.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- SEO location pages -->
+  <url><loc>https://wordwise.uk/seo-services-surrey.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-dorking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-leatherhead.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Website design hub -->
+  <url><loc>https://wordwise.uk/website-design-surrey.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://wordwise.uk/website-designer-dorking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/website-designer-leatherhead.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/website-designer-reigate.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
   <!-- Removal company hub -->
   <url><loc>https://wordwise.uk/seo-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/how-to-get-more-removal-enquiries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/keywords-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://wordwise.uk/posts/removal-company-marketing.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wordwise.uk/posts/local-seo-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wordwise.uk/posts/removal-company-website-tips.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wordwise.uk/posts/how-to-get-commercial-removal-contracts.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wordwise.uk/posts/best-keywords-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Health and wellness hub -->
   <url><loc>https://wordwise.uk/health-wellness-marketing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/yoga-studio-marketing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/seo-for-yoga-studios.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/how-to-get-more-yoga-clients.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Website design blog posts -->
+  <url><loc>https://wordwise.uk/posts/how-much-does-a-website-cost.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/why-your-website-isnt-getting-enquiries.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/wix-vs-custom-website.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/do-i-need-a-website-if-i-have-facebook.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Removal company blog posts -->
+  <url><loc>https://wordwise.uk/posts/removal-company-marketing.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/local-seo-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/removal-company-website-tips.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/how-to-get-commercial-removal-contracts.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/best-keywords-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Yoga blog posts -->
   <url><loc>https://wordwise.uk/posts/yoga-marketing-ideas.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -42,7 +63,7 @@
   <url><loc>https://wordwise.uk/posts/yoga-teacher-training-seo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wordwise.uk/posts/local-seo-for-yoga-studios.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog post -->
+  <!-- General blog posts -->
   <url><loc>https://wordwise.uk/posts/how-to-get-your-small-business-found-on-google.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M37DVT86');</script>
+<!-- End Google Tag Manager -->
   <meta charset="UTF-8"/>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RVHK0QHMM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-7RVHK0QHMM");
-</script>
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SEO Services Surrey | Local SEO Consultant | Wordwise</title>
   <meta name="description" content="SEO services for local businesses across Surrey. Keyword research, content strategy, local SEO, and website design from Wordwise, based in Dorking."/>
@@ -55,13 +56,48 @@
     footer a{color:var(--orange);text-decoration:none}
     .fl{font-family:var(--serif);font-size:16px;color:rgba(255,255,255,0.4)}.fl span{color:var(--orange)}
     @media(max-width:768px){nav{padding:16px 20px}#hero{padding:100px 20px 60px}section{padding:48px 20px}.services-grid,.links-grid{grid-template-columns:1fr}#cta-wrap{padding:48px 20px}footer{padding:20px;flex-direction:column;gap:12px}}
-  </style>
+  
+  /* === HAMBURGER NAV === */
+  .nav-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:none;cursor:pointer;padding:10px;z-index:210;flex-shrink:0}
+  .nav-burger span{display:block;width:24px;height:2px;background:currentColor;transition:transform 0.3s,opacity 0.3s}
+  .nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-burger.open span:nth-child(2){opacity:0}
+  .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:199}
+  .nav-overlay.open{display:block}
+  .nav-menu{position:fixed;top:0;right:0;bottom:0;width:min(320px,85vw);background:#141414;z-index:200;display:flex;flex-direction:column;gap:0;padding:88px 32px 32px;transform:translateX(100%);transition:transform 0.3s ease;overflow-y:auto}
+  .nav-menu.open{transform:translateX(0);box-shadow:-8px 0 40px rgba(0,0,0,0.3)}
+  .nav-menu a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:17px;font-weight:500;padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.08);transition:color 0.2s;display:block;font-family:'DM Sans',system-ui,sans-serif}
+  .nav-menu a:hover{color:#fff}
+  .nav-menu .menu-cta{background:#E8602A;color:#fff !important;text-align:center;border-radius:8px;padding:14px;margin-top:20px;border-bottom:none;font-weight:700;font-family:'DM Sans',system-ui,sans-serif}
+  /* === END HAMBURGER NAV === */
+</style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M37DVT86"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <nav>
   <a class="nav-logo" href="https://wordwise.uk">Word<span>wise</span></a>
-  <a href="https://wordwise.uk/audit.html" class="nav-cta">Free audit</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-overlay" id="navOverlay"></div>
+<div class="nav-menu" id="navMenu">
+  <a href="https://wordwise.uk/">Home</a>
+  <a href="https://wordwise.uk/seo-services.html">SEO Services</a>
+  <a href="https://wordwise.uk/website-design-surrey.html">Website Design</a>
+  <a href="https://wordwise.uk/seo-for-removal-companies.html">Removal Companies</a>
+  <a href="https://wordwise.uk/health-wellness-marketing.html">Wellness Studios</a>
+  <a href="https://wordwise.uk/industries.html">All Industries</a>
+  <a href="https://wordwise.uk/packages.html">Packages</a>
+  <a href="https://wordwise.uk/about.html">About</a>
+  <a href="https://wordwise.uk/blog.html">Blog</a>
+  <a href="https://wordwise.uk/contact.html">Contact</a>
+  <a href="https://wordwise.uk/audit.html" class="menu-cta">Get your free audit &rarr;</a>
+</div>
 <section id="hero">
   <div class="eyebrow">SEO Services &middot; Surrey</div>
   <h1>SEO services for<br><em>Surrey</em><br>businesses.</h1>
@@ -112,5 +148,22 @@
   <div class="fl">Word<span>wise</span></div>
   <p>&copy; 2026 Wordwise &middot; <a href="https://wordwise.uk">wordwise.uk</a> &middot; <a href="mailto:hello@wordwise.uk">hello@wordwise.uk</a></p>
 </footer>
+<script>
+(function(){
+  var b=document.getElementById('navBurger');
+  var m=document.getElementById('navMenu');
+  var o=document.getElementById('navOverlay');
+  if(!b||!m)return;
+  function closeMenu(){m.classList.remove('open');b.classList.remove('open');if(o)o.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){
+    var open=m.classList.toggle('open');
+    b.classList.toggle('open',open);
+    if(o)o.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',String(open));
+  });
+  if(o)o.addEventListener('click',closeMenu);
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+})();
+</script>
 </body>
 </html>
