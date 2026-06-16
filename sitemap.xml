@@ -9,6 +9,7 @@
   <url><loc>https://wordwise.uk/audit.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/industries.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
   <!-- Service pages -->
   <url><loc>https://wordwise.uk/seo-services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -19,12 +20,24 @@
   <url><loc>https://wordwise.uk/seo-services-surrey.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/seo-services-dorking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/seo-services-leatherhead.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-brighton.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-crawley.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-guildford.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/seo-services-horsham.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Website design hub -->
   <url><loc>https://wordwise.uk/website-design-surrey.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://wordwise.uk/website-designer-dorking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/website-designer-leatherhead.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wordwise.uk/website-designer-reigate.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Websites for industry pages -->
+  <url><loc>https://wordwise.uk/websites-for-plumbers.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/websites-for-electricians.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/websites-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/websites-for-yoga-studios.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/websites-for-photographers.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wordwise.uk/websites-for-roofers.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Removal company hub -->
   <url><loc>https://wordwise.uk/seo-for-removal-companies.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -42,6 +55,7 @@
   <url><loc>https://wordwise.uk/posts/why-your-website-isnt-getting-enquiries.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wordwise.uk/posts/wix-vs-custom-website.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wordwise.uk/posts/do-i-need-a-website-if-i-have-facebook.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wordwise.uk/posts/website-redesign-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Removal company blog posts -->
   <url><loc>https://wordwise.uk/posts/removal-company-marketing.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
